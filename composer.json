@@ -1,0 +1,15 @@
+{
+    "name": "leafpoda/jdsdk",
+    "description": "JD ad sdk files",
+    "type": "library",
+    "authors": [
+        {
+            "name": "baihaiyin",
+            "email": "baihaiyin@linkworld.cn"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": ["src/JdSdk.php"]
+    }
+}

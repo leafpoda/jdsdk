@@ -1,0 +1,54 @@
+<?php
+class FollowVenderReadQueryForCountByVidRequest
+{
+	private $apiParas = array();
+	
+	public function getApiMethodName(){
+	  return "jingdong.follow.vender.read.queryForCountByVid";
+	}
+	
+	public function getApiParas(){
+	    if(empty($this->apiParas)){
+            return "{}";
+        }
+        return json_encode($this->apiParas);
+	}
+	
+	public function check(){
+		
+	}
+	
+	public function putOtherTextParam($key, $value){
+		$this->apiParas[$key] = $value;
+		$this->$key = $value;
+	}
+
+    private  $version;
+
+    public function setVersion($version){
+        $this->version = $version;
+    }
+
+    public function getVersion(){
+        return $this->version;
+    }
+                                    	                        	                   			private $shopId;
+    	                        
+	public function setShopId($shopId){
+		$this->shopId = $shopId;
+         $this->apiParas["shopId"] = $shopId;
+	}
+
+	public function getShopId(){
+	  return $this->shopId;
+	}
+
+}
+
+
+
+
+
+        
+ 
+
