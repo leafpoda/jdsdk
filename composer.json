@@ -2,6 +2,7 @@
     "name": "leafpoda/jdsdk",
     "description": "JD ad sdk files",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "baihaiyin",
