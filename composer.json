@@ -11,7 +11,7 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {
+        "psr-0": {
             "JdSdk\\": "src/",
             "JdSdk\\Request\\": "src/request",
             "JdSdk\\Request\\Domain\\": "src/request/domain"
