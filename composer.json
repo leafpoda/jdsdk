@@ -11,6 +11,9 @@
     ],
     "require": {},
     "autoload": {
+        "psr-4": {
+            "\\JdSdk": "/"
+        },
         "files": ["src/JdSdk.php"]
     }
 }
