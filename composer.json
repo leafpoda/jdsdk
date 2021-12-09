@@ -12,9 +12,9 @@
     "require": {},
     "autoload": {
         "psr-0": {
-            "JdSdk\\": "src/",
-            "JdSdk\\Request\\": "src/request",
-            "JdSdk\\Request\\Domain\\": "src/request/domain"
+            "JdSdk": "src/",
+            "JdSdk\\Request": "src/request",
+            "JdSdk\\Request\\Domain": "src/request/domain"
         }
     }
 }

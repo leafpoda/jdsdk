@@ -1,4 +1,7 @@
 <?php
+
+namespace Jdsdk\Request;
+
 class VasSubscribeGetRequest
 {
 	private $apiParas = array();
