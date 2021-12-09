@@ -1,5 +1,5 @@
 <?php
-class VasSubscSearchRequest
+class JdVasSubscSearchRequest
 {
 	private $apiParas = array();
 	
