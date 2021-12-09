@@ -14,7 +14,7 @@
         "psr-4": {
             "JdSdk\\": "src/",
             "JdSdk\\Request\\": "src/request",
-            "JdSdk\\Request\\Domain": "src/request/domain"
+            "JdSdk\\Request\\Domain\\": "src/request/domain"
         }
     }
 }
