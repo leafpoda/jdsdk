@@ -11,10 +11,6 @@
     ],
     "require": {},
     "autoload": {
-        "psr-0": {
-            "JdSdk": "src/",
-            "JdSdk\\Request": "src/request",
-            "JdSdk\\Request\\Domain": "src/request/domain"
-        }
+        "files": ["src/JdSdk.php"]
     }
 }
