@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbTpBatchUpdateDmpPriceRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbTpBatchUpdateDmpPriceRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -32,7 +34,7 @@ class AdsDspRtbTpBatchUpdateDmpPriceRequest
     public function getVersion(){
         return $this->version;
     }
-                                    	                   			private $adGroupId;
+                                                        		                                    	                   			private $adGroupId;
     	                        
 	public function setAdGroupId($adGroupId){
 		$this->adGroupId = $adGroupId;
@@ -63,7 +65,29 @@ class AdsDspRtbTpBatchUpdateDmpPriceRequest
               public function getIds(){
               	return $this->ids;
               }
-                                                                                                                                                            		                                    	                        	                        	                        	                            }
+                                                                                                                                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
+    	                        
+	public function setAccessPin($accessPin){
+		$this->accessPin = $accessPin;
+         $this->apiParas["accessPin"] = $accessPin;
+	}
+
+	public function getAccessPin(){
+	  return $this->accessPin;
+	}
+
+                        	                   			private $authType;
+    	                        
+	public function setAuthType($authType){
+		$this->authType = $authType;
+         $this->apiParas["authType"] = $authType;
+	}
+
+	public function getAuthType(){
+	  return $this->authType;
+	}
+
+                            }
 
 
 

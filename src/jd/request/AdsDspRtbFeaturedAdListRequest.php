@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbFeaturedAdListRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbFeaturedAdListRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -173,14 +175,14 @@ class AdsDspRtbFeaturedAdListRequest
 	  return $this->name;
 	}
 
-                                                 	                        	                                                                                                                                                                                                                                                                                                               private $campaignIds;
-                              public function setCampaignIds($campaignIds ){
-                 $this->campaignIds=$campaignIds;
-                 $this->apiParas["campaignIds"] = $campaignIds;
+                                                 	                        	                                                                                                                                                                                                                                                                                                               private $ids;
+                              public function setIds($ids ){
+                 $this->ids=$ids;
+                 $this->apiParas["ids"] = $ids;
               }
 
-              public function getCampaignIds(){
-              	return $this->campaignIds;
+              public function getIds(){
+              	return $this->ids;
               }
                                                                                                                                         	                   			private $clickOrOrderCaliber;
     	                        
@@ -204,7 +206,51 @@ class AdsDspRtbFeaturedAdListRequest
 	  return $this->campaignName;
 	}
 
-                                                                        		                                    	                        	                        	                        	                            }
+                                                                        		                                    	                   			private $pin;
+    	                        
+	public function setPin($pin){
+		$this->pin = $pin;
+         $this->apiParas["pin"] = $pin;
+	}
+
+	public function getPin(){
+	  return $this->pin;
+	}
+
+                        	                        	                   			private $venderId;
+    	                        
+	public function setVenderId($venderId){
+		$this->venderId = $venderId;
+         $this->apiParas["venderId"] = $venderId;
+	}
+
+	public function getVenderId(){
+	  return $this->venderId;
+	}
+
+                        	                        	                   			private $accessPin;
+    	                        
+	public function setAccessPin($accessPin){
+		$this->accessPin = $accessPin;
+         $this->apiParas["accessPin"] = $accessPin;
+	}
+
+	public function getAccessPin(){
+	  return $this->accessPin;
+	}
+
+                        	                   			private $authType;
+    	                        
+	public function setAuthType($authType){
+		$this->authType = $authType;
+         $this->apiParas["authType"] = $authType;
+	}
+
+	public function getAuthType(){
+	  return $this->authType;
+	}
+
+                            }
 
 
 

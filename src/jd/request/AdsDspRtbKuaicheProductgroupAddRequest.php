@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbKuaicheProductgroupAddRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbKuaicheProductgroupAddRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -132,7 +134,38 @@ class AdsDspRtbKuaicheProductgroupAddRequest
               public function getImgUrl(){
               	return $this->imgUrl;
               }
-                                                                                                                                        	                                            		                                    	                        	                        	                                                                                                    		                                    	                        	                        	                        	                            }
+                                                                                                                                                                                                                                                                                                                                              private $customTitle;
+                              public function setCustomTitle($customTitle ){
+                 $this->customTitle=$customTitle;
+                 $this->apiParas["customTitle"] = $customTitle;
+              }
+
+              public function getCustomTitle(){
+              	return $this->customTitle;
+              }
+                                                                                                                                        	                                            		                                    	                        	                        	                                                                                                    		                                    	                        	                        	                        	                        	                   			private $accessPin;
+    	                        
+	public function setAccessPin($accessPin){
+		$this->accessPin = $accessPin;
+         $this->apiParas["accessPin"] = $accessPin;
+	}
+
+	public function getAccessPin(){
+	  return $this->accessPin;
+	}
+
+                        	                   			private $authType;
+    	                        
+	public function setAuthType($authType){
+		$this->authType = $authType;
+         $this->apiParas["authType"] = $authType;
+	}
+
+	public function getAuthType(){
+	  return $this->authType;
+	}
+
+                            }
 
 
 

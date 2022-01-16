@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbKuaicheEffectAreaQueryRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbKuaicheEffectAreaQueryRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -120,7 +122,7 @@ class AdsDspRtbKuaicheEffectAreaQueryRequest
 	  return $this->clickOrOrderCaliber;
 	}
 
-                                                                        		                                    	                        	                        	                        	                            }
+                        	                        	                                                                        		                                    	                        	                        	                        	                            }
 
 
 

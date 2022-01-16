@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbKuaicheAccountAdReportRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbKuaicheAccountAdReportRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -153,7 +155,18 @@ class AdsDspRtbKuaicheAccountAdReportRequest
 	  return $this->campaignId;
 	}
 
-                        	                        	                   			private $adId;
+                        	                   			private $deliveryType;
+    	                        
+	public function setDeliveryType($deliveryType){
+		$this->deliveryType = $deliveryType;
+         $this->apiParas["deliveryType"] = $deliveryType;
+	}
+
+	public function getDeliveryType(){
+	  return $this->deliveryType;
+	}
+
+                        	                   			private $adId;
     	                        
 	public function setAdId($adId){
 		$this->adId = $adId;

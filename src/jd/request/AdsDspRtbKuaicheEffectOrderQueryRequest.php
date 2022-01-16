@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbKuaicheEffectOrderQueryRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbKuaicheEffectOrderQueryRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -153,15 +155,15 @@ class AdsDspRtbKuaicheEffectOrderQueryRequest
 	  return $this->groupId;
 	}
 
-                        	                   			private $mySelf;
+                        	                   			private $orderType;
     	                        
-	public function setMySelf($mySelf){
-		$this->mySelf = $mySelf;
-         $this->apiParas["mySelf"] = $mySelf;
+	public function setOrderType($orderType){
+		$this->orderType = $orderType;
+         $this->apiParas["orderType"] = $orderType;
 	}
 
-	public function getMySelf(){
-	  return $this->mySelf;
+	public function getOrderType(){
+	  return $this->orderType;
 	}
 
                         	                   			private $orderStatus;

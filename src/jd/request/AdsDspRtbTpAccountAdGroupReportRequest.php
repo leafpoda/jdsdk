@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbTpAccountAdGroupReportRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbTpAccountAdGroupReportRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -151,6 +153,17 @@ class AdsDspRtbTpAccountAdGroupReportRequest
 
 	public function getStartDay(){
 	  return $this->startDay;
+	}
+
+                        	                   			private $orderStatusCategory;
+    	                        
+	public function setOrderStatusCategory($orderStatusCategory){
+		$this->orderStatusCategory = $orderStatusCategory;
+         $this->apiParas["orderStatusCategory"] = $orderStatusCategory;
+	}
+
+	public function getOrderStatusCategory(){
+	  return $this->orderStatusCategory;
 	}
 
                                                                         		                                    	                        	                        	                        	                            }

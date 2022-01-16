@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbFeaturedAddCampaignRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbFeaturedAddCampaignRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -98,7 +100,29 @@ class AdsDspRtbFeaturedAddCampaignRequest
 	  return $this->uniformSpeed;
 	}
 
-                                                                        		                                    	                        	                        	                        	                            }
+                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
+    	                        
+	public function setAccessPin($accessPin){
+		$this->accessPin = $accessPin;
+         $this->apiParas["accessPin"] = $accessPin;
+	}
+
+	public function getAccessPin(){
+	  return $this->accessPin;
+	}
+
+                        	                   			private $authType;
+    	                        
+	public function setAuthType($authType){
+		$this->authType = $authType;
+         $this->apiParas["authType"] = $authType;
+	}
+
+	public function getAuthType(){
+	  return $this->authType;
+	}
+
+                            }
 
 
 

@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbKuaicheDmpBindRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbKuaicheDmpBindRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -32,18 +34,7 @@ class AdsDspRtbKuaicheDmpBindRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                   			private $dmpType;
-    	                        
-	public function setDmpType($dmpType){
-		$this->dmpType = $dmpType;
-         $this->apiParas["dmpType"] = $dmpType;
-	}
-
-	public function getDmpType(){
-	  return $this->dmpType;
-	}
-
-                                                 	                        	                                                                                                                                                                                                                                                                                                               private $adGroupPrice;
+                                                        		                                    	                                                 	                        	                                                                                                                                                                                                                                                                                                               private $adGroupPrice;
                               public function setAdGroupPrice($adGroupPrice ){
                  $this->adGroupPrice=$adGroupPrice;
                  $this->apiParas["adGroupPrice"] = $adGroupPrice;
@@ -81,7 +72,29 @@ class AdsDspRtbKuaicheDmpBindRequest
 	  return $this->adGroupId;
 	}
 
-                                                                        		                                    	                        	                        	                        	                            }
+                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
+    	                        
+	public function setAccessPin($accessPin){
+		$this->accessPin = $accessPin;
+         $this->apiParas["accessPin"] = $accessPin;
+	}
+
+	public function getAccessPin(){
+	  return $this->accessPin;
+	}
+
+                        	                   			private $authType;
+    	                        
+	public function setAuthType($authType){
+		$this->authType = $authType;
+         $this->apiParas["authType"] = $authType;
+	}
+
+	public function getAuthType(){
+	  return $this->authType;
+	}
+
+                            }
 
 
 

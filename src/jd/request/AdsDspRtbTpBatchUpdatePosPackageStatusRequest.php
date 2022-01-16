@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbTpBatchUpdatePosPackageStatusRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbTpBatchUpdatePosPackageStatusRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -32,14 +34,14 @@ class AdsDspRtbTpBatchUpdatePosPackageStatusRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                                             	                        	                                                                                                                                                                                                                                                                                                               private $ids;
-                              public function setIds($ids ){
-                 $this->ids=$ids;
-                 $this->apiParas["ids"] = $ids;
+                                                        		                                                             	                        	                                                                                                                                                                                                                                                                                        private $id;
+                              public function setId($id ){
+                 $this->id=$id;
+                 $this->apiParas["id"] = $id;
               }
 
-              public function getIds(){
-              	return $this->ids;
+              public function getId(){
+              	return $this->id;
               }
                                                                                                                                         	                   			private $enable;
     	                        
@@ -63,7 +65,29 @@ class AdsDspRtbTpBatchUpdatePosPackageStatusRequest
 	  return $this->adGroupId;
 	}
 
-                                                                        		                                    	                        	                        	                        	                            }
+                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
+    	                        
+	public function setAccessPin($accessPin){
+		$this->accessPin = $accessPin;
+         $this->apiParas["accessPin"] = $accessPin;
+	}
+
+	public function getAccessPin(){
+	  return $this->accessPin;
+	}
+
+                        	                   			private $authType;
+    	                        
+	public function setAuthType($authType){
+		$this->authType = $authType;
+         $this->apiParas["authType"] = $authType;
+	}
+
+	public function getAuthType(){
+	  return $this->authType;
+	}
+
+                            }
 
 
 

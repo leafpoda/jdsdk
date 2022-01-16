@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbFeaturedAccountUserReportRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbFeaturedAccountUserReportRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;

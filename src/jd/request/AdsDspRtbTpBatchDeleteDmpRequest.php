@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbTpBatchDeleteDmpRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbTpBatchDeleteDmpRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -32,7 +34,7 @@ class AdsDspRtbTpBatchDeleteDmpRequest
     public function getVersion(){
         return $this->version;
     }
-                                    	                   			private $adGroupId;
+                                                        		                                    	                   			private $adGroupId;
     	                        
 	public function setAdGroupId($adGroupId){
 		$this->adGroupId = $adGroupId;
@@ -52,7 +54,40 @@ class AdsDspRtbTpBatchDeleteDmpRequest
               public function getIds(){
               	return $this->ids;
               }
-                                                                                                                                                            		                                    	                        	                        	                        	                            }
+                                                                                                                                        	                   			private $dmpType;
+    	                        
+	public function setDmpType($dmpType){
+		$this->dmpType = $dmpType;
+         $this->apiParas["dmpType"] = $dmpType;
+	}
+
+	public function getDmpType(){
+	  return $this->dmpType;
+	}
+
+                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
+    	                        
+	public function setAccessPin($accessPin){
+		$this->accessPin = $accessPin;
+         $this->apiParas["accessPin"] = $accessPin;
+	}
+
+	public function getAccessPin(){
+	  return $this->accessPin;
+	}
+
+                        	                   			private $authType;
+    	                        
+	public function setAuthType($authType){
+		$this->authType = $authType;
+         $this->apiParas["authType"] = $authType;
+	}
+
+	public function getAuthType(){
+	  return $this->authType;
+	}
+
+                            }
 
 
 

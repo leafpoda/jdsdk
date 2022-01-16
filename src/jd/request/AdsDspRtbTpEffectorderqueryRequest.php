@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbTpEffectorderqueryRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbTpEffectorderqueryRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -164,18 +166,7 @@ class AdsDspRtbTpEffectorderqueryRequest
 	  return $this->province;
 	}
 
-                        	                   			private $retrievalType;
-    	                        
-	public function setRetrievalType($retrievalType){
-		$this->retrievalType = $retrievalType;
-         $this->apiParas["retrievalType"] = $retrievalType;
-	}
-
-	public function getRetrievalType(){
-	  return $this->retrievalType;
-	}
-
-                        	                   			private $startClickDay;
+                        	                        	                   			private $startClickDay;
     	                        
 	public function setStartClickDay($startClickDay){
 		$this->startClickDay = $startClickDay;

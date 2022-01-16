@@ -1,6 +1,8 @@
 <?php
 class AdsDspRtbTpAddAdRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class AdsDspRtbTpAddAdRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -76,7 +78,40 @@ class AdsDspRtbTpAddAdRequest
 	  return $this->imgUrl;
 	}
 
-                                                                        		                                    	                        	                        	                        	                            }
+                        	                   			private $name;
+    	                        
+	public function setName($name){
+		$this->name = $name;
+         $this->apiParas["name"] = $name;
+	}
+
+	public function getName(){
+	  return $this->name;
+	}
+
+                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
+    	                        
+	public function setAccessPin($accessPin){
+		$this->accessPin = $accessPin;
+         $this->apiParas["accessPin"] = $accessPin;
+	}
+
+	public function getAccessPin(){
+	  return $this->accessPin;
+	}
+
+                        	                   			private $authType;
+    	                        
+	public function setAuthType($authType){
+		$this->authType = $authType;
+         $this->apiParas["authType"] = $authType;
+	}
+
+	public function getAuthType(){
+	  return $this->authType;
+	}
+
+                            }
 
 
 
