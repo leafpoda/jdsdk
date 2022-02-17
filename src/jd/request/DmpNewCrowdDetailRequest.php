@@ -1,12 +1,12 @@
 <?php
-class DmpNewCrowdEstimateCrowdNumByCrowdIdRequest
+class DmpNewCrowdDetailRequest
 {
 
 
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
-	  return "jingdong.dmp.new.crowd.estimateCrowdNumByCrowdId";
+	  return "jingdong.dmp.new.crowd.detail";
 	}
 	
 	public function getApiParas(){
@@ -34,18 +34,7 @@ class DmpNewCrowdEstimateCrowdNumByCrowdIdRequest
     public function getVersion(){
         return $this->version;
     }
-                                    	                   			private $crowdId;
-    	                        
-	public function setCrowdId($crowdId){
-		$this->crowdId = $crowdId;
-         $this->apiParas["crowdId"] = $crowdId;
-	}
-
-	public function getCrowdId(){
-	  return $this->crowdId;
-	}
-
-                        	                        	                   			private $accessPin;
+                                    	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;
@@ -67,7 +56,18 @@ class DmpNewCrowdEstimateCrowdNumByCrowdIdRequest
 	  return $this->authType;
 	}
 
-                        	                        	                        	                        	                        	}
+                        	                        	                        	                        	                        	                        	                   			private $crowdId;
+    	                        
+	public function setCrowdId($crowdId){
+		$this->crowdId = $crowdId;
+         $this->apiParas["crowdId"] = $crowdId;
+	}
+
+	public function getCrowdId(){
+	  return $this->crowdId;
+	}
+
+}
 
 
 

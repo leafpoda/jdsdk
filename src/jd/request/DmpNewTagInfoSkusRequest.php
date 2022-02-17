@@ -1,12 +1,12 @@
 <?php
-class DmpNewCrowdEstimateCrowdNumByCrowdIdRequest
+class DmpNewTagInfoSkusRequest
 {
 
 
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
-	  return "jingdong.dmp.new.crowd.estimateCrowdNumByCrowdId";
+	  return "jingdong.dmp.new.tag.info.skus";
 	}
 	
 	public function getApiParas(){
@@ -34,18 +34,7 @@ class DmpNewCrowdEstimateCrowdNumByCrowdIdRequest
     public function getVersion(){
         return $this->version;
     }
-                                    	                   			private $crowdId;
-    	                        
-	public function setCrowdId($crowdId){
-		$this->crowdId = $crowdId;
-         $this->apiParas["crowdId"] = $crowdId;
-	}
-
-	public function getCrowdId(){
-	  return $this->crowdId;
-	}
-
-                        	                        	                   			private $accessPin;
+                                    	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;
@@ -67,7 +56,29 @@ class DmpNewCrowdEstimateCrowdNumByCrowdIdRequest
 	  return $this->authType;
 	}
 
-                        	                        	                        	                        	                        	}
+                        	                        	                        	                        	                        	                        	                   			private $skuIds;
+    	                        
+	public function setSkuIds($skuIds){
+		$this->skuIds = $skuIds;
+         $this->apiParas["skuIds"] = $skuIds;
+	}
+
+	public function getSkuIds(){
+	  return $this->skuIds;
+	}
+
+                        	                   			private $type;
+    	                        
+	public function setType($type){
+		$this->type = $type;
+         $this->apiParas["type"] = $type;
+	}
+
+	public function getType(){
+	  return $this->type;
+	}
+
+}
 
 
 

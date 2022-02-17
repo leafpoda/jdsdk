@@ -111,7 +111,7 @@ class DmpNewCrowdAddRequest
 	  return $this->authType;
 	}
 
-                        	}
+                        	                        	                        	                        	                        	}
 
 
 

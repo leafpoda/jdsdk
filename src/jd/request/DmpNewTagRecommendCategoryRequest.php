@@ -111,7 +111,7 @@ class DmpNewTagRecommendCategoryRequest
 	  return $this->authType;
 	}
 
-                        	}
+                        	                        	                        	                        	                        	}
 
 
 
