@@ -56,32 +56,32 @@ class JdClient
 			curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 		}
 
-		if (is_array($postFields) && 0 < count($postFields))
-		{
-			$postBodyString = "";
-			$postMultipart = false;
-			foreach ($postFields as $k => $v)
-			{
-				if("@" != substr($v, 0, 1))//判断是不是文件上传
-				{
-					$postBodyString .= "$k=" . urlencode($v) . "&"; 
-				}
-				else//文件上传用multipart/form-data，否则用www-form-urlencoded
-				{
-					$postMultipart = true;
-				}
-			}
-			unset($k, $v);
+//		if (is_array($postFields) && 0 < count($postFields))
+//		{
+//			$postBodyString = "";
+//			$postMultipart = false;
+//			foreach ($postFields as $k => $v)
+//			{
+//				if("@" != substr($v, 0, 1))//判断是不是文件上传
+//				{
+//					$postBodyString .= "$k=" . urlencode($v) . "&";
+//				}
+//				else//文件上传用multipart/form-data，否则用www-form-urlencoded
+//				{
+//					$postMultipart = true;
+//				}
+//			}
+//			unset($k, $v);
 			curl_setopt($ch, CURLOPT_POST, true);
-			if ($postMultipart)
-			{
+//			if ($postMultipart)
+//			{
 				curl_setopt($ch, CURLOPT_POSTFIELDS, $postFields);
-			}
-			else
-			{
-				curl_setopt($ch, CURLOPT_POSTFIELDS, substr($postBodyString,0,-1));
-			}
-		}
+//			}
+//			else
+//			{
+//				curl_setopt($ch, CURLOPT_POSTFIELDS, substr($postBodyString,0,-1));
+//			}
+		//}
 		$reponse = curl_exec($ch);
 		
 		if (curl_errno($ch))
@@ -132,7 +132,7 @@ class JdClient
 		//发起HTTP请求
 		try
 		{
-			$resp = $this->curl($requestUrl, $apiParams);
+			$resp = $this->curl($this->serverUrl, $sysParams);
 		}
 		catch (Exception $e)
 		{
