@@ -137,6 +137,46 @@ class CouponReq{
     public function getCouponTitle(){
         return $this->couponTitle;
     }
+            
+    private $contentMatchMedias;
+    
+    public function setContentMatchMedias($contentMatchMedias){
+        $this->params['contentMatchMedias'] = $contentMatchMedias;
+    }
+
+    public function getContentMatchMedias(){
+        return $this->contentMatchMedias;
+    }
+            
+    private $showInMedias;
+    
+    public function setShowInMedias($showInMedias){
+        $this->params['showInMedias'] = $showInMedias;
+    }
+
+    public function getShowInMedias(){
+        return $this->showInMedias;
+    }
+            
+    private $targetType;
+    
+    public function setTargetType($targetType){
+        $this->params['targetType'] = $targetType;
+    }
+
+    public function getTargetType(){
+        return $this->targetType;
+    }
+            
+    private $childPromoters;
+    
+    public function setChildPromoters($childPromoters){
+        $this->params['childPromoters'] = $childPromoters;
+    }
+
+    public function getChildPromoters(){
+        return $this->childPromoters;
+    }
     
     function getInstance(){
         return $this->params;

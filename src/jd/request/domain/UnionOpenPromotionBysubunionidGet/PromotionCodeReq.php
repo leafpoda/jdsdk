@@ -77,6 +77,16 @@ class PromotionCodeReq{
     public function getGiftCouponKey(){
         return $this->giftCouponKey;
     }
+            
+    private $channelId;
+    
+    public function setChannelId($channelId){
+        $this->params['channelId'] = $channelId;
+    }
+
+    public function getChannelId(){
+        return $this->channelId;
+    }
     
     function getInstance(){
         return $this->params;

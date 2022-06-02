@@ -87,6 +87,26 @@ class GoodsReq{
     public function getForbidTypes(){
         return $this->forbidTypes;
     }
+            
+    private $groupId;
+    
+    public function setGroupId($groupId){
+        $this->params['groupId'] = $groupId;
+    }
+
+    public function getGroupId(){
+        return $this->groupId;
+    }
+            
+    private $ownerUnionId;
+    
+    public function setOwnerUnionId($ownerUnionId){
+        $this->params['ownerUnionId'] = $ownerUnionId;
+    }
+
+    public function getOwnerUnionId(){
+        return $this->ownerUnionId;
+    }
     
     function getInstance(){
         return $this->params;

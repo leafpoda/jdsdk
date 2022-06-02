@@ -56,7 +56,7 @@ class DmpCommonSmartcrowdGetRequest
 	  return $this->authType;
 	}
 
-                        	}
+                        	                        	                        	                        	                        	}
 
 
 

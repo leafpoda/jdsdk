@@ -14,17 +14,17 @@ class KplOpenRegularPlanShipmentorderRequest
 	}
 	
 	public function getApiParas(){
-        if(empty($this->apiParas)){
-	        return "{}";
-	    }
-		return json_encode($this->apiParas);
+	    if(empty($this->apiParas)){
+            return "{}";
+        }
+        return json_encode($this->apiParas);
 	}
 	
 	public function check(){
 		
 	}
 	
-    public function putOtherTextParam($key, $value){
+	public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
@@ -38,14 +38,78 @@ class KplOpenRegularPlanShipmentorderRequest
     public function getVersion(){
         return $this->version;
     }
-    private  $shipmentParam;
+                                                        		                                    	                   			private $venderId;
+    	                        
+	public function setVenderId($venderId){
+		$this->venderId = $venderId;
+         $this->apiParas["venderId"] = $venderId;
+	}
 
-    public function setShipmentParam($shipmentParam){
-        $this->apiParas['shipmentParam'] = $shipmentParam;
-    }
-    public function getShipmentParam(){
-        return $this->apiParas['shipmentParam'];
-    }
-}
+	public function getVenderId(){
+	  return $this->venderId;
+	}
 
-?>
+                        	                   			private $planId;
+    	                        
+	public function setPlanId($planId){
+		$this->planId = $planId;
+         $this->apiParas["planId"] = $planId;
+	}
+
+	public function getPlanId(){
+	  return $this->planId;
+	}
+
+                        	                   			private $orderId;
+    	                        
+	public function setOrderId($orderId){
+		$this->orderId = $orderId;
+         $this->apiParas["orderId"] = $orderId;
+	}
+
+	public function getOrderId(){
+	  return $this->orderId;
+	}
+
+                        	                   			private $logiCoprId;
+    	                        
+	public function setLogiCoprId($logiCoprId){
+		$this->logiCoprId = $logiCoprId;
+         $this->apiParas["logiCoprId"] = $logiCoprId;
+	}
+
+	public function getLogiCoprId(){
+	  return $this->logiCoprId;
+	}
+
+                        	                   			private $logiNo;
+    	                        
+	public function setLogiNo($logiNo){
+		$this->logiNo = $logiNo;
+         $this->apiParas["logiNo"] = $logiNo;
+	}
+
+	public function getLogiNo(){
+	  return $this->logiNo;
+	}
+
+                        	                   			private $installId;
+    	                        
+	public function setInstallId($installId){
+		$this->installId = $installId;
+         $this->apiParas["installId"] = $installId;
+	}
+
+	public function getInstallId(){
+	  return $this->installId;
+	}
+
+                            }
+
+
+
+
+
+        
+ 
+

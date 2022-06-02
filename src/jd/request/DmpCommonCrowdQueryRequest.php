@@ -188,7 +188,7 @@ class DmpCommonCrowdQueryRequest
 	  return $this->authType;
 	}
 
-                        	}
+                        	                        	                        	                        	                        	}
 
 
 

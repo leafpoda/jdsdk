@@ -337,6 +337,56 @@ class GoodsReqDTO{
     public function getEliteType(){
         return $this->eliteType;
     }
+            
+    private $isSeckill;
+    
+    public function setIsSeckill($isSeckill){
+        $this->params['isSeckill'] = $isSeckill;
+    }
+
+    public function getIsSeckill(){
+        return $this->isSeckill;
+    }
+            
+    private $isPresale;
+    
+    public function setIsPresale($isPresale){
+        $this->params['isPresale'] = $isPresale;
+    }
+
+    public function getIsPresale(){
+        return $this->isPresale;
+    }
+            
+    private $isReserve;
+    
+    public function setIsReserve($isReserve){
+        $this->params['isReserve'] = $isReserve;
+    }
+
+    public function getIsReserve(){
+        return $this->isReserve;
+    }
+            
+    private $bonusId;
+    
+    public function setBonusId($bonusId){
+        $this->params['bonusId'] = $bonusId;
+    }
+
+    public function getBonusId(){
+        return $this->bonusId;
+    }
+            
+    private $area;
+    
+    public function setArea($area){
+        $this->params['area'] = $area;
+    }
+
+    public function getArea(){
+        return $this->area;
+    }
     
     function getInstance(){
         return $this->params;

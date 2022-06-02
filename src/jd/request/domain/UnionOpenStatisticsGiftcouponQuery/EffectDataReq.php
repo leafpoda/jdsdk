@@ -57,6 +57,26 @@ class EffectDataReq{
     public function getKey(){
         return $this->key;
     }
+            
+    private $targetType;
+    
+    public function setTargetType($targetType){
+        $this->params['targetType'] = $targetType;
+    }
+
+    public function getTargetType(){
+        return $this->targetType;
+    }
+            
+    private $pin;
+    
+    public function setPin($pin){
+        $this->params['pin'] = $pin;
+    }
+
+    public function getPin(){
+        return $this->pin;
+    }
     
     function getInstance(){
         return $this->params;
