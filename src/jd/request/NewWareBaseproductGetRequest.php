@@ -2,32 +2,28 @@
 class NewWareBaseproductGetRequest
 {
 
-    public function __construct()
-    {
-         $this->version = "1.0";
+
+    private $apiParas = array();
+
+    public function getApiMethodName(){
+        return "jingdong.new.ware.baseproduct.get";
     }
 
-	private $apiParas = array();
-	
-	public function getApiMethodName(){
-	  return "jingdong.new.ware.baseproduct.get";
-	}
-	
-	public function getApiParas(){
+    public function getApiParas(){
         if(empty($this->apiParas)){
-	        return "{}";
-	    }
-		return json_encode($this->apiParas);
-	}
-	
-	public function check(){
-		
-	}
-	
+            return "{}";
+        }
+        return json_encode($this->apiParas);
+    }
+
+    public function check(){
+
+    }
+
     public function putOtherTextParam($key, $value){
-		$this->apiParas[$key] = $value;
-		$this->$key = $value;
-	}
+        $this->apiParas[$key] = $value;
+        $this->$key = $value;
+    }
 
     private $version;
 
@@ -38,22 +34,30 @@ class NewWareBaseproductGetRequest
     public function getVersion(){
         return $this->version;
     }
-    private  $skuIdSet;
+    private $ids;
+    public function setIds($ids ){
+        $this->ids=$ids;
+        $this->apiParas["ids"] = $ids;
+    }
 
-    public function setSkuIdSet($skuIdSet){
-        $this->apiParas['skuIdSet'] = $skuIdSet;
+    public function getIds(){
+        return $this->ids;
     }
-    public function getSkuIdSet(){
-        return $this->apiParas['skuIdSet'];
+    private $basefields;
+    public function setBasefields($basefields ){
+        $this->basefields=$basefields;
+        $this->apiParas["basefields"] = $basefields;
     }
-    private  $baseset;
 
-    public function setBaseset($baseset){
-        $this->apiParas['baseset'] = $baseset;
-    }
-    public function getBaseset(){
-        return $this->apiParas['baseset'];
+    public function getBasefields(){
+        return $this->basefields;
     }
 }
 
-?>
+
+
+
+
+
+
+
