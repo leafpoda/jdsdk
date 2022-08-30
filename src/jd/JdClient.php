@@ -102,7 +102,8 @@ class JdClient
 
 	public function execute($request, $access_token = null)
 	{
-		//组装系统参数
+        $result =  new ResultSet();
+        //组装系统参数
 		$sysParams["app_key"] = $this->appKey;
 		$sysParams["v"] = $this->version;
 		$sysParams["method"] = $request->getApiMethodName();
