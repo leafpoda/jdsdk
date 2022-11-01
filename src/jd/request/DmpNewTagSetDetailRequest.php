@@ -298,7 +298,18 @@ class DmpNewTagSetDetailRequest
 	  return $this->authType;
 	}
 
-                        	}
+                        	                        	                   			private $attributeList;
+    	                        
+	public function setAttributeList($attributeList){
+		$this->attributeList = $attributeList;
+         $this->apiParas["attributeList"] = $attributeList;
+	}
+
+	public function getAttributeList(){
+	  return $this->attributeList;
+	}
+
+}
 
 
 

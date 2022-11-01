@@ -67,7 +67,7 @@ class DsDspRtbKuaicheGroupGetRequest
 	  return $this->authType;
 	}
 
-                        	                            }
+                        	                        	                        	                            }
 
 
 

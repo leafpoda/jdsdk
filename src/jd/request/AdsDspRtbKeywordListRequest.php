@@ -177,7 +177,18 @@ class AdsDspRtbKeywordListRequest
 	  return $this->nameLike;
 	}
 
-                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
+                                                                        		                                    	                        	                        	                   			private $venderId;
+    	                        
+	public function setVenderId($venderId){
+		$this->venderId = $venderId;
+         $this->apiParas["venderId"] = $venderId;
+	}
+
+	public function getVenderId(){
+	  return $this->venderId;
+	}
+
+                        	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;
@@ -199,7 +210,18 @@ class AdsDspRtbKeywordListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                   			private $josRemoteIp;
+    	                        
+	public function setJosRemoteIp($josRemoteIp){
+		$this->josRemoteIp = $josRemoteIp;
+         $this->apiParas["josRemoteIp"] = $josRemoteIp;
+	}
+
+	public function getJosRemoteIp(){
+	  return $this->josRemoteIp;
+	}
+
+                        	                            }
 
 
 

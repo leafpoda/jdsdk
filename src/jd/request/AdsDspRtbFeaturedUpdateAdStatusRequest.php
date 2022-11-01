@@ -76,7 +76,7 @@ class AdsDspRtbFeaturedUpdateAdStatusRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

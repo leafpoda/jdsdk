@@ -155,7 +155,7 @@ class AdsIbgUniversalJosServiceMediaQueryRequest
 	  return $this->queryType;
 	}
 
-                        	                        	}
+                        	                        	                        	}
 
 
 

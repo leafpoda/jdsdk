@@ -243,7 +243,18 @@ class AdsIbgUniversalJosServiceAccountQueryRequest
 	  return $this->jdMediaUserId;
 	}
 
-}
+                        	                   			private $jstGroupType;
+    	                        
+	public function setJstGroupType($jstGroupType){
+		$this->jstGroupType = $jstGroupType;
+         $this->apiParas["jstGroupType"] = $jstGroupType;
+	}
+
+	public function getJstGroupType(){
+	  return $this->jstGroupType;
+	}
+
+                        	                        	}
 
 
 

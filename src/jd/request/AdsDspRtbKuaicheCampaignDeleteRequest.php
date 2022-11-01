@@ -65,7 +65,7 @@ class AdsDspRtbKuaicheCampaignDeleteRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

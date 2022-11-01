@@ -65,7 +65,7 @@ class AdsDspRtbTpBatchDeleteCampaignRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

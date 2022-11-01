@@ -78,7 +78,7 @@ class AdsDspRtbTpUpdateBudgetRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

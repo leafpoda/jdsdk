@@ -76,7 +76,7 @@ class AdsDspRtbKuaicheGroupUpdatestatusRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

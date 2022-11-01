@@ -199,7 +199,7 @@ class AdsDspRtbTpPosPackageListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

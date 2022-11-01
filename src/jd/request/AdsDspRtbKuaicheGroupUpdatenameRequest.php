@@ -78,7 +78,7 @@ class AdsDspRtbKuaicheGroupUpdatenameRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

@@ -122,7 +122,7 @@ class AdsDspRtbKuaicheCampaignAddRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

@@ -133,7 +133,7 @@ class AdsIbgUniversalJosServiceLocationQueryRequest
 	  return $this->pageSize;
 	}
 
-                        	                        	                   			private $authType;
+                        	                        	                        	                   			private $authType;
     	                        
 	public function setAuthType($authType){
 		$this->authType = $authType;
@@ -155,18 +155,7 @@ class AdsIbgUniversalJosServiceLocationQueryRequest
 	  return $this->accessPin;
 	}
 
-                        	                        	                        	                        	                        	                   			private $impressionOrClickEffect;
-    	                        
-	public function setImpressionOrClickEffect($impressionOrClickEffect){
-		$this->impressionOrClickEffect = $impressionOrClickEffect;
-         $this->apiParas["impressionOrClickEffect"] = $impressionOrClickEffect;
-	}
-
-	public function getImpressionOrClickEffect(){
-	  return $this->impressionOrClickEffect;
-	}
-
-                        	                   			private $interactiveType;
+                        	                        	                        	                        	                        	                        	                   			private $interactiveType;
     	                        
 	public function setInteractiveType($interactiveType){
 		$this->interactiveType = $interactiveType;

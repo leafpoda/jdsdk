@@ -56,7 +56,51 @@ class AdsDspRtbKeywordBootRecommendListRequest
 	  return $this->adGroupId;
 	}
 
-                                                                        		                                    	                        	                        	                        	                            }
+                                                                        		                                    	                        	                        	                   			private $venderId;
+    	                        
+	public function setVenderId($venderId){
+		$this->venderId = $venderId;
+         $this->apiParas["venderId"] = $venderId;
+	}
+
+	public function getVenderId(){
+	  return $this->venderId;
+	}
+
+                        	                        	                   			private $accessPin;
+    	                        
+	public function setAccessPin($accessPin){
+		$this->accessPin = $accessPin;
+         $this->apiParas["accessPin"] = $accessPin;
+	}
+
+	public function getAccessPin(){
+	  return $this->accessPin;
+	}
+
+                        	                   			private $authType;
+    	                        
+	public function setAuthType($authType){
+		$this->authType = $authType;
+         $this->apiParas["authType"] = $authType;
+	}
+
+	public function getAuthType(){
+	  return $this->authType;
+	}
+
+                        	                   			private $josRemoteIp;
+    	                        
+	public function setJosRemoteIp($josRemoteIp){
+		$this->josRemoteIp = $josRemoteIp;
+         $this->apiParas["josRemoteIp"] = $josRemoteIp;
+	}
+
+	public function getJosRemoteIp(){
+	  return $this->josRemoteIp;
+	}
+
+                        	                            }
 
 
 

@@ -1,6 +1,8 @@
 <?php
 class WareReadSearchWare4RecycledRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class WareReadSearchWare4RecycledRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;

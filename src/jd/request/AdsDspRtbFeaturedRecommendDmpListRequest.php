@@ -166,7 +166,7 @@ class AdsDspRtbFeaturedRecommendDmpListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

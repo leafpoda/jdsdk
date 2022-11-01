@@ -1,12 +1,12 @@
 <?php
-class AdsDspRtbFeaturedAdGroupListV2Request
+class AdsDspRtbKuaicheGroupBatchUpdateFeeRequest
 {
 
 
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
-	  return "jingdong.ads.dsp.rtb.featured.adGroupList.v2";
+	  return "jingdong.ads.dsp.rtb.kuaiche.group.batchUpdateFee";
 	}
 	
 	public function getApiParas(){

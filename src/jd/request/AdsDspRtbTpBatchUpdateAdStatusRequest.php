@@ -76,7 +76,7 @@ class AdsDspRtbTpBatchUpdateAdStatusRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

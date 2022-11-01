@@ -287,7 +287,7 @@ class AdsIbgUniversalJosServiceCampaignQueryRequest
 	  return $this->granularity;
 	}
 
-}
+                        	                        	}
 
 
 

@@ -56,17 +56,6 @@ class AdsIbgUniversalJosServiceAccountReportRequest
 	  return $this->startDay;
 	}
 
-                        	                   			private $orderStatusCategory;
-    	                        
-	public function setOrderStatusCategory($orderStatusCategory){
-		$this->orderStatusCategory = $orderStatusCategory;
-         $this->apiParas["orderStatusCategory"] = $orderStatusCategory;
-	}
-
-	public function getOrderStatusCategory(){
-	  return $this->orderStatusCategory;
-	}
-
                         	                   			private $pageSize;
     	                        
 	public function setPageSize($pageSize){
@@ -76,6 +65,17 @@ class AdsIbgUniversalJosServiceAccountReportRequest
 
 	public function getPageSize(){
 	  return $this->pageSize;
+	}
+
+                        	                   			private $orderStatusCategory;
+    	                        
+	public function setOrderStatusCategory($orderStatusCategory){
+		$this->orderStatusCategory = $orderStatusCategory;
+         $this->apiParas["orderStatusCategory"] = $orderStatusCategory;
+	}
+
+	public function getOrderStatusCategory(){
+	  return $this->orderStatusCategory;
 	}
 
                         	                   			private $mediaType;
@@ -208,6 +208,17 @@ class AdsIbgUniversalJosServiceAccountReportRequest
 
 	public function getInteractiveType(){
 	  return $this->interactiveType;
+	}
+
+                        	                   			private $businessType;
+    	                        
+	public function setBusinessType($businessType){
+		$this->businessType = $businessType;
+         $this->apiParas["businessType"] = $businessType;
+	}
+
+	public function getBusinessType(){
+	  return $this->businessType;
 	}
 
                                                                         		                                    	                        	                        	                   			private $authType;

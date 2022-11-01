@@ -56,7 +56,7 @@ class AdsDspRtbAreaQueryRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

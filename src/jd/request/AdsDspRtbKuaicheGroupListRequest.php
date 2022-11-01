@@ -188,7 +188,18 @@ class AdsDspRtbKuaicheGroupListRequest
 	  return $this->clickOrOrderCaliber;
 	}
 
-                        	                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
+                        	                        	                   	                    		private $filters;
+    	                        
+	public function setFilters($filters){
+		$this->filters = $filters;
+         $this->apiParas["filters"] = $filters;
+	}
+
+	public function getFilters(){
+	  return $this->filters;
+	}
+
+                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;
@@ -210,7 +221,7 @@ class AdsDspRtbKuaicheGroupListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

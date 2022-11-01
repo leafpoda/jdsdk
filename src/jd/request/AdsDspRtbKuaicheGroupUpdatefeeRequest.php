@@ -100,7 +100,7 @@ class AdsDspRtbKuaicheGroupUpdatefeeRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

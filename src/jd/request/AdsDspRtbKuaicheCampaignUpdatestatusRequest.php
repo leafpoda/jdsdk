@@ -54,18 +54,7 @@ class AdsDspRtbKuaicheCampaignUpdatestatusRequest
               public function getIds(){
               	return $this->ids;
               }
-                                                                                                                                                                                        		                                    	                        	                   			private $businessFrom;
-    	                        
-	public function setBusinessFrom($businessFrom){
-		$this->businessFrom = $businessFrom;
-         $this->apiParas["businessFrom"] = $businessFrom;
-	}
-
-	public function getBusinessFrom(){
-	  return $this->businessFrom;
-	}
-
-                        	                        	                        	                   			private $accessPin;
+                                                                                                                                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;
@@ -87,7 +76,7 @@ class AdsDspRtbKuaicheCampaignUpdatestatusRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

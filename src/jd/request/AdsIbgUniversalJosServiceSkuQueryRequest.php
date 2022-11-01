@@ -45,95 +45,7 @@ class AdsIbgUniversalJosServiceSkuQueryRequest
 	  return $this->businessType;
 	}
 
-                        	                        	                   			private $clickStartDay;
-    	                        
-	public function setClickStartDay($clickStartDay){
-		$this->clickStartDay = $clickStartDay;
-         $this->apiParas["clickStartDay"] = $clickStartDay;
-	}
-
-	public function getClickStartDay(){
-	  return $this->clickStartDay;
-	}
-
-                        	                   			private $clickEndDay;
-    	                        
-	public function setClickEndDay($clickEndDay){
-		$this->clickEndDay = $clickEndDay;
-         $this->apiParas["clickEndDay"] = $clickEndDay;
-	}
-
-	public function getClickEndDay(){
-	  return $this->clickEndDay;
-	}
-
-                        	                   			private $orderStartDay;
-    	                        
-	public function setOrderStartDay($orderStartDay){
-		$this->orderStartDay = $orderStartDay;
-         $this->apiParas["orderStartDay"] = $orderStartDay;
-	}
-
-	public function getOrderStartDay(){
-	  return $this->orderStartDay;
-	}
-
-                        	                   			private $orderEndDay;
-    	                        
-	public function setOrderEndDay($orderEndDay){
-		$this->orderEndDay = $orderEndDay;
-         $this->apiParas["orderEndDay"] = $orderEndDay;
-	}
-
-	public function getOrderEndDay(){
-	  return $this->orderEndDay;
-	}
-
-                        	                   			private $myself;
-    	                        
-	public function setMyself($myself){
-		$this->myself = $myself;
-         $this->apiParas["myself"] = $myself;
-	}
-
-	public function getMyself(){
-	  return $this->myself;
-	}
-
-                        	                   			private $orderStatus;
-    	                        
-	public function setOrderStatus($orderStatus){
-		$this->orderStatus = $orderStatus;
-         $this->apiParas["orderStatus"] = $orderStatus;
-	}
-
-	public function getOrderStatus(){
-	  return $this->orderStatus;
-	}
-
-                        	                   			private $province;
-    	                        
-	public function setProvince($province){
-		$this->province = $province;
-         $this->apiParas["province"] = $province;
-	}
-
-	public function getProvince(){
-	  return $this->province;
-	}
-
-                        	                   			private $areaId;
-    	                        
-	public function setAreaId($areaId){
-		$this->areaId = $areaId;
-         $this->apiParas["areaId"] = $areaId;
-	}
-
-	public function getAreaId(){
-	  return $this->areaId;
-	}
-
-                        	                   			private $isDaily;
+                        	                        	                   			private $isDaily;
     	                        
 	public function setIsDaily($isDaily){
 		$this->isDaily = $isDaily;
@@ -287,7 +199,7 @@ class AdsIbgUniversalJosServiceSkuQueryRequest
 	  return $this->accessPin;
 	}
 
-                        	                        	                        	                        	}
+                        	                        	                        	                        	                        	                        	}
 
 
 

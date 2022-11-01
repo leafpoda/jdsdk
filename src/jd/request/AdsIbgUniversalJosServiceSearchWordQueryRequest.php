@@ -166,7 +166,7 @@ class AdsIbgUniversalJosServiceSearchWordQueryRequest
 	  return $this->keyword;
 	}
 
-                        	                        	                   			private $authType;
+                        	                        	                        	                   			private $authType;
     	                        
 	public function setAuthType($authType){
 		$this->authType = $authType;

@@ -1,6 +1,8 @@
 <?php
 class CategoryReadFindValuesByAttrIdRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class CategoryReadFindValuesByAttrIdRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;

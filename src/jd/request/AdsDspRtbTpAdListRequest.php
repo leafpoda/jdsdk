@@ -210,7 +210,7 @@ class AdsDspRtbTpAdListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

@@ -34,29 +34,7 @@ class AdsDspMaterialOpenapiDeleteByMaterialIdRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                   			private $operatorPin;
-    	                        
-	public function setOperatorPin($operatorPin){
-		$this->operatorPin = $operatorPin;
-         $this->apiParas["operatorPin"] = $operatorPin;
-	}
-
-	public function getOperatorPin(){
-	  return $this->operatorPin;
-	}
-
-                        	                        	                   			private $appKey;
-    	                        
-	public function setAppKey($appKey){
-		$this->appKey = $appKey;
-         $this->apiParas["appKey"] = $appKey;
-	}
-
-	public function getAppKey(){
-	  return $this->appKey;
-	}
-
-                        	                   			private $authType;
+                                                        		                                    	                        	                        	                   			private $authType;
     	                        
 	public function setAuthType($authType){
 		$this->authType = $authType;
@@ -78,7 +56,7 @@ class AdsDspMaterialOpenapiDeleteByMaterialIdRequest
 	  return $this->accessPin;
 	}
 
-                                                    	                   			private $materialId;
+                        	                        	                        	                                                    	                   			private $materialId;
     	                        
 	public function setMaterialId($materialId){
 		$this->materialId = $materialId;

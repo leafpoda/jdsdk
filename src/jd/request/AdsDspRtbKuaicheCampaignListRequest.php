@@ -221,7 +221,7 @@ class AdsDspRtbKuaicheCampaignListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

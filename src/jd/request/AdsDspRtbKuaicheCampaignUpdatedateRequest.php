@@ -89,7 +89,7 @@ class AdsDspRtbKuaicheCampaignUpdatedateRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

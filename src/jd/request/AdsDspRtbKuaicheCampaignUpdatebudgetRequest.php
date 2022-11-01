@@ -89,7 +89,7 @@ class AdsDspRtbKuaicheCampaignUpdatebudgetRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

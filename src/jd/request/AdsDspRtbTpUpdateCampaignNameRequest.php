@@ -78,7 +78,7 @@ class AdsDspRtbTpUpdateCampaignNameRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

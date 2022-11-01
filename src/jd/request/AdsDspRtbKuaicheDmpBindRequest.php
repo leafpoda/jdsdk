@@ -94,7 +94,7 @@ class AdsDspRtbKuaicheDmpBindRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

@@ -199,7 +199,7 @@ class AdsDspRtbTpDmpListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

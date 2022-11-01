@@ -111,7 +111,7 @@ class AdsDspRtbTpAddAdRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

@@ -1,6 +1,8 @@
 <?php
 class SellerPromotionV2ListRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class SellerPromotionV2ListRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -184,6 +186,17 @@ class SellerPromotionV2ListRequest
 
 	public function getSrcType(){
 	  return $this->srcType;
+	}
+
+                        	                   			private $startId;
+    	                                                            
+	public function setStartId($startId){
+		$this->startId = $startId;
+         $this->apiParas["start_id"] = $startId;
+	}
+
+	public function getStartId(){
+	  return $this->startId;
 	}
 
                             }

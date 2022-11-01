@@ -177,7 +177,7 @@ class AdsDspRtbFeaturedCampaignListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

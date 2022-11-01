@@ -87,7 +87,7 @@ class AdsDspRtbTpBatchUpdateDmpStatusRequest
 	  return $this->accessPin;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

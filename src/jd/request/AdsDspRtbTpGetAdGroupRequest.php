@@ -67,7 +67,7 @@ class AdsDspRtbTpGetAdGroupRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

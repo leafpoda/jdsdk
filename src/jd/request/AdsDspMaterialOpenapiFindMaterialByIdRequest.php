@@ -34,18 +34,7 @@ class AdsDspMaterialOpenapiFindMaterialByIdRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                   			private $operatorPin;
-    	                        
-	public function setOperatorPin($operatorPin){
-		$this->operatorPin = $operatorPin;
-         $this->apiParas["operatorPin"] = $operatorPin;
-	}
-
-	public function getOperatorPin(){
-	  return $this->operatorPin;
-	}
-
-                        	                        	                        	                   			private $authType;
+                                                        		                                    	                        	                        	                   			private $authType;
     	                        
 	public function setAuthType($authType){
 		$this->authType = $authType;
@@ -67,7 +56,7 @@ class AdsDspMaterialOpenapiFindMaterialByIdRequest
 	  return $this->accessPin;
 	}
 
-                        	                                                    	                   			private $materialId;
+                        	                        	                        	                                                    	                   			private $materialId;
     	                        
 	public function setMaterialId($materialId){
 		$this->materialId = $materialId;

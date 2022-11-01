@@ -111,7 +111,29 @@ class DmpNewCrowdAddRequest
 	  return $this->authType;
 	}
 
-                        	                        	                        	                        	                        	}
+                        	                        	                        	                        	                        	                        	                   			private $frontendDimensionGroupsList;
+    	                        
+	public function setFrontendDimensionGroupsList($frontendDimensionGroupsList){
+		$this->frontendDimensionGroupsList = $frontendDimensionGroupsList;
+         $this->apiParas["frontendDimensionGroupsList"] = $frontendDimensionGroupsList;
+	}
+
+	public function getFrontendDimensionGroupsList(){
+	  return $this->frontendDimensionGroupsList;
+	}
+
+                        	                   			private $isNewTagCompose;
+    	                        
+	public function setIsNewTagCompose($isNewTagCompose){
+		$this->isNewTagCompose = $isNewTagCompose;
+         $this->apiParas["isNewTagCompose"] = $isNewTagCompose;
+	}
+
+	public function getIsNewTagCompose(){
+	  return $this->isNewTagCompose;
+	}
+
+}
 
 
 

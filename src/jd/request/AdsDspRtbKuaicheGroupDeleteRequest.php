@@ -10,17 +10,17 @@ class AdsDspRtbKuaicheGroupDeleteRequest
 	}
 	
 	public function getApiParas(){
-	    if(empty($this->apiParas)){
-            return "{}";
-        }
-        return json_encode($this->apiParas);
+        if(empty($this->apiParas)){
+	        return "{}";
+	    }
+		return json_encode($this->apiParas);
 	}
 	
 	public function check(){
 		
 	}
 	
-	public function putOtherTextParam($key, $value){
+    public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
@@ -34,43 +34,22 @@ class AdsDspRtbKuaicheGroupDeleteRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                                                 	                        	                                                                                                                                                                                                                                                                                                               private $ids;
-                              public function setIds($ids ){
-                 $this->ids=$ids;
-                 $this->apiParas["ids"] = $ids;
-              }
+    private  $param1;
 
-              public function getIds(){
-              	return $this->ids;
-              }
-                                                                                                                                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
-    	                        
-	public function setAccessPin($accessPin){
-		$this->accessPin = $accessPin;
-         $this->apiParas["accessPin"] = $accessPin;
-	}
+    public function setParam1($param1){
+        $this->apiParas['param1'] = $param1;
+    }
+    public function getParam1(){
+        return $this->apiParas['param1'];
+    }
+    private  $param2;
 
-	public function getAccessPin(){
-	  return $this->accessPin;
-	}
+    public function setParam2($param2){
+        $this->apiParas['param2'] = $param2;
+    }
+    public function getParam2(){
+        return $this->apiParas['param2'];
+    }
+}
 
-                        	                   			private $authType;
-    	                        
-	public function setAuthType($authType){
-		$this->authType = $authType;
-         $this->apiParas["authType"] = $authType;
-	}
-
-	public function getAuthType(){
-	  return $this->authType;
-	}
-
-                            }
-
-
-
-
-
-        
- 
-
+?>

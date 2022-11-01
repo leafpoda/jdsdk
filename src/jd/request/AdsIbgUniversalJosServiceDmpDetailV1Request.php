@@ -133,29 +133,7 @@ class AdsIbgUniversalJosServiceDmpDetailV1Request
 	  return $this->orderStatusCategory;
 	}
 
-                        	                   			private $businessType;
-    	                        
-	public function setBusinessType($businessType){
-		$this->businessType = $businessType;
-         $this->apiParas["businessType"] = $businessType;
-	}
-
-	public function getBusinessType(){
-	  return $this->businessType;
-	}
-
-                        	                   			private $product;
-    	                        
-	public function setProduct($product){
-		$this->product = $product;
-         $this->apiParas["product"] = $product;
-	}
-
-	public function getProduct(){
-	  return $this->product;
-	}
-
-                        	                   			private $dmpId;
+                        	                        	                        	                   			private $dmpId;
     	                        
 	public function setDmpId($dmpId){
 		$this->dmpId = $dmpId;

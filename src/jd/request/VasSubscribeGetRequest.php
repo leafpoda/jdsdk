@@ -1,9 +1,8 @@
 <?php
-
-namespace Jdsdk\Request;
-
 class VasSubscribeGetRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -26,7 +25,7 @@ class VasSubscribeGetRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -66,6 +65,17 @@ class VasSubscribeGetRequest
 
 	public function getOpenIdBuyer(){
 	  return $this->openIdBuyer;
+	}
+
+                        	                   			private $xidBuyer;
+    	                                                            
+	public function setXidBuyer($xidBuyer){
+		$this->xidBuyer = $xidBuyer;
+         $this->apiParas["xid_buyer"] = $xidBuyer;
+	}
+
+	public function getXidBuyer(){
+	  return $this->xidBuyer;
 	}
 
 }

@@ -342,7 +342,7 @@ class AdsIbgUniversalJosServiceGroupQueryRequest
 	  return $this->granularity;
 	}
 
-}
+                        	                        	}
 
 
 

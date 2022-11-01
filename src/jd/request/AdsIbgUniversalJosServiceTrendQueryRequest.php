@@ -34,7 +34,7 @@ class AdsIbgUniversalJosServiceTrendQueryRequest
     public function getVersion(){
         return $this->version;
     }
-                                    	                        	                        	                        	                        	                        	                   			private $accessPin;
+                                    	                        	                        	                        	                        	                        	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;

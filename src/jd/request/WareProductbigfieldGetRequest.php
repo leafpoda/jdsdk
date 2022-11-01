@@ -2,10 +2,6 @@
 class WareProductbigfieldGetRequest
 {
 
-    public function __construct()
-    {
-         $this->version = "1.0";
-    }
 
 	private $apiParas = array();
 	
@@ -14,17 +10,17 @@ class WareProductbigfieldGetRequest
 	}
 	
 	public function getApiParas(){
-        if(empty($this->apiParas)){
-	        return "{}";
-	    }
-		return json_encode($this->apiParas);
+	    if(empty($this->apiParas)){
+            return "{}";
+        }
+        return json_encode($this->apiParas);
 	}
 	
 	public function check(){
 		
 	}
 	
-    public function putOtherTextParam($key, $value){
+	public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
@@ -38,22 +34,32 @@ class WareProductbigfieldGetRequest
     public function getVersion(){
         return $this->version;
     }
-    private  $wid;
+                                    	                   			private $skuId;
+    	                                                            
+	public function setSkuId($skuId){
+		$this->skuId = $skuId;
+         $this->apiParas["sku_id"] = $skuId;
+	}
 
-    public function setWid($wid){
-        $this->apiParas['wid'] = $wid;
-    }
-    public function getWid(){
-        return $this->apiParas['wid'];
-    }
-    private  $fields;
+	public function getSkuId(){
+	  return $this->skuId;
+	}
 
-    public function setFields($fields){
-        $this->apiParas['fields'] = $fields;
-    }
-    public function getFields(){
-        return $this->apiParas['fields'];
-    }
-}
+                                                 	                        	                                                                                                                                                                                                                                                                                                               private $field;
+                              public function setField($field ){
+                 $this->field=$field;
+                 $this->apiParas["field"] = $field;
+              }
 
-?>
+              public function getField(){
+              	return $this->field;
+              }
+                                                                                                                }
+
+
+
+
+
+        
+ 
+

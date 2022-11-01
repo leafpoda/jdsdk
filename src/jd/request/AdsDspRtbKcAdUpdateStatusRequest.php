@@ -76,7 +76,7 @@ class AdsDspRtbKcAdUpdateStatusRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

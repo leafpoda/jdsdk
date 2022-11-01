@@ -65,7 +65,7 @@ class AdsDspRtbFeaturedDeleteAdGroupRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

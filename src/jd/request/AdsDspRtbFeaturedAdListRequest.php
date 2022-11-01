@@ -206,29 +206,7 @@ class AdsDspRtbFeaturedAdListRequest
 	  return $this->campaignName;
 	}
 
-                                                                        		                                    	                   			private $pin;
-    	                        
-	public function setPin($pin){
-		$this->pin = $pin;
-         $this->apiParas["pin"] = $pin;
-	}
-
-	public function getPin(){
-	  return $this->pin;
-	}
-
-                        	                        	                   			private $venderId;
-    	                        
-	public function setVenderId($venderId){
-		$this->venderId = $venderId;
-         $this->apiParas["venderId"] = $venderId;
-	}
-
-	public function getVenderId(){
-	  return $this->venderId;
-	}
-
-                        	                        	                   			private $accessPin;
+                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;
@@ -250,7 +228,7 @@ class AdsDspRtbFeaturedAdListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                        	                            }
 
 
 

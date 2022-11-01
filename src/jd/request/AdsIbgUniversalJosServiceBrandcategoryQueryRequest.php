@@ -177,7 +177,7 @@ class AdsIbgUniversalJosServiceBrandcategoryQueryRequest
 	  return $this->accessPin;
 	}
 
-                        	                        	                        	                        	}
+                        	                        	                        	                        	                        	                        	}
 
 
 

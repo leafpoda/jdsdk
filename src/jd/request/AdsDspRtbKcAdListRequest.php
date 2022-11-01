@@ -221,7 +221,7 @@ class AdsDspRtbKcAdListRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

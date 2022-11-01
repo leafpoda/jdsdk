@@ -243,18 +243,7 @@ class AdsIbgUniversalJosServiceOrderQueryRequest
 	  return $this->mediaType;
 	}
 
-                        	                   			private $impressionOrClickEffect;
-    	                        
-	public function setImpressionOrClickEffect($impressionOrClickEffect){
-		$this->impressionOrClickEffect = $impressionOrClickEffect;
-         $this->apiParas["impressionOrClickEffect"] = $impressionOrClickEffect;
-	}
-
-	public function getImpressionOrClickEffect(){
-	  return $this->impressionOrClickEffect;
-	}
-
-                        	                   			private $posPackageId;
+                        	                        	                   			private $posPackageId;
     	                        
 	public function setPosPackageId($posPackageId){
 		$this->posPackageId = $posPackageId;

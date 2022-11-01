@@ -134,7 +134,7 @@ class AdsDspRtbKeywordPriceUpdateRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                            }
 
 
 

@@ -34,18 +34,7 @@ class AdsDspMaterialOpenapiAddMaterialRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                   			private $operatorPin;
-    	                        
-	public function setOperatorPin($operatorPin){
-		$this->operatorPin = $operatorPin;
-         $this->apiParas["operatorPin"] = $operatorPin;
-	}
-
-	public function getOperatorPin(){
-	  return $this->operatorPin;
-	}
-
-                        	                        	                        	                   			private $authType;
+                                                        		                                    	                        	                        	                   			private $authType;
     	                        
 	public function setAuthType($authType){
 		$this->authType = $authType;
@@ -67,7 +56,7 @@ class AdsDspMaterialOpenapiAddMaterialRequest
 	  return $this->accessPin;
 	}
 
-                        	                                                                        		                                    	                   			private $campaignType;
+                        	                        	                        	                                                                        		                                    	                   			private $campaignType;
     	                        
 	public function setCampaignType($campaignType){
 		$this->campaignType = $campaignType;
@@ -122,16 +111,7 @@ class AdsDspMaterialOpenapiAddMaterialRequest
 	  return $this->materialName;
 	}
 
-                                                 	                        	                                                                                                                                                                                                                                                                                        private $qualificationId;
-                              public function setQualificationId($qualificationId ){
-                 $this->qualificationId=$qualificationId;
-                 $this->apiParas["qualificationId"] = $qualificationId;
-              }
-
-              public function getQualificationId(){
-              	return $this->qualificationId;
-              }
-                                                                                                                                        	                   			private $shopId;
+                        	                   			private $shopId;
     	                        
 	public function setShopId($shopId){
 		$this->shopId = $shopId;
@@ -164,50 +144,14 @@ class AdsDspMaterialOpenapiAddMaterialRequest
 	  return $this->businessType;
 	}
 
-                                                 	                        	                                                                                                                                                                                                                                                                                        private $orderId;
-                              public function setOrderId($orderId ){
-                 $this->orderId=$orderId;
-                 $this->apiParas["orderId"] = $orderId;
+                                                 	                        	                                                                                                                                                                                                                                                                                                               private $element;
+                              public function setElement($element ){
+                 $this->element=$element;
+                 $this->apiParas["element"] = $element;
               }
 
-              public function getOrderId(){
-              	return $this->orderId;
-              }
-                                                                                                                                                                                                                                                                                                                       private $subType;
-                              public function setSubType($subType ){
-                 $this->subType=$subType;
-                 $this->apiParas["subType"] = $subType;
-              }
-
-              public function getSubType(){
-              	return $this->subType;
-              }
-                                                                                                                                                                                                                                                                                                                       private $elementType;
-                              public function setElementType($elementType ){
-                 $this->elementType=$elementType;
-                 $this->apiParas["elementType"] = $elementType;
-              }
-
-              public function getElementType(){
-              	return $this->elementType;
-              }
-                                                                                                                                                                                                                                                                                                                       private $content;
-                              public function setContent($content ){
-                 $this->content=$content;
-                 $this->apiParas["content"] = $content;
-              }
-
-              public function getContent(){
-              	return $this->content;
-              }
-                                                                                                                                                                                                                                                                                                                       private $elementName;
-                              public function setElementName($elementName ){
-                 $this->elementName=$elementName;
-                 $this->apiParas["elementName"] = $elementName;
-              }
-
-              public function getElementName(){
-              	return $this->elementName;
+              public function getElement(){
+              	return $this->element;
               }
                                                                                                                                         	                   			private $effectiveDate;
     	                        
@@ -240,6 +184,17 @@ class AdsDspMaterialOpenapiAddMaterialRequest
 
 	public function getExpirationDate(){
 	  return $this->expirationDate;
+	}
+
+                        	                   			private $creativeType;
+    	                        
+	public function setCreativeType($creativeType){
+		$this->creativeType = $creativeType;
+         $this->apiParas["creativeType"] = $creativeType;
+	}
+
+	public function getCreativeType(){
+	  return $this->creativeType;
 	}
 
                             }
