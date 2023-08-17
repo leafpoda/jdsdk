@@ -209,7 +209,16 @@ class SkuReadSearchSkuListRequest
 	  return $this->pageSize;
 	}
 
-                                                    	                   	                    		private $field;
+                                                 	                        	                                                                                                                                                                                                                                                                                                               private $valid;
+                              public function setValid($valid ){
+                 $this->valid=$valid;
+                 $this->apiParas["valid"] = $valid;
+              }
+
+              public function getValid(){
+              	return $this->valid;
+              }
+                                                                                                                                                                    	                   	                    		private $field;
     	                        
 	public function setField($field){
 		$this->field = $field;

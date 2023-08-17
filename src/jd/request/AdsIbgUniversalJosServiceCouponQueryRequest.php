@@ -221,6 +221,39 @@ class AdsIbgUniversalJosServiceCouponQueryRequest
 	  return $this->batchId;
 	}
 
+                        	                   			private $isDownload;
+    	                        
+	public function setIsDownload($isDownload){
+		$this->isDownload = $isDownload;
+         $this->apiParas["isDownload"] = $isDownload;
+	}
+
+	public function getIsDownload(){
+	  return $this->isDownload;
+	}
+
+                        	                   			private $reportName;
+    	                        
+	public function setReportName($reportName){
+		$this->reportName = $reportName;
+         $this->apiParas["reportName"] = $reportName;
+	}
+
+	public function getReportName(){
+	  return $this->reportName;
+	}
+
+                        	                   			private $province;
+    	                        
+	public function setProvince($province){
+		$this->province = $province;
+         $this->apiParas["province"] = $province;
+	}
+
+	public function getProvince(){
+	  return $this->province;
+	}
+
                         	                        	}
 
 

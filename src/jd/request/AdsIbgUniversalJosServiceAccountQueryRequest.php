@@ -89,18 +89,7 @@ class AdsIbgUniversalJosServiceAccountQueryRequest
 	  return $this->mediaType;
 	}
 
-                        	                   			private $filters;
-    	                        
-	public function setFilters($filters){
-		$this->filters = $filters;
-         $this->apiParas["filters"] = $filters;
-	}
-
-	public function getFilters(){
-	  return $this->filters;
-	}
-
-                        	                        	                   			private $platform;
+                        	                   			private $platform;
     	                        
 	public function setPlatform($platform){
 		$this->platform = $platform;
@@ -252,6 +241,39 @@ class AdsIbgUniversalJosServiceAccountQueryRequest
 
 	public function getJstGroupType(){
 	  return $this->jstGroupType;
+	}
+
+                        	                   			private $isDownload;
+    	                        
+	public function setIsDownload($isDownload){
+		$this->isDownload = $isDownload;
+         $this->apiParas["isDownload"] = $isDownload;
+	}
+
+	public function getIsDownload(){
+	  return $this->isDownload;
+	}
+
+                        	                   			private $reportName;
+    	                        
+	public function setReportName($reportName){
+		$this->reportName = $reportName;
+         $this->apiParas["reportName"] = $reportName;
+	}
+
+	public function getReportName(){
+	  return $this->reportName;
+	}
+
+                        	                   			private $columns;
+    	                        
+	public function setColumns($columns){
+		$this->columns = $columns;
+         $this->apiParas["columns"] = $columns;
+	}
+
+	public function getColumns(){
+	  return $this->columns;
 	}
 
                         	                        	}

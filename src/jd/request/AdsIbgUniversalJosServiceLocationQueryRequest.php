@@ -155,7 +155,7 @@ class AdsIbgUniversalJosServiceLocationQueryRequest
 	  return $this->accessPin;
 	}
 
-                        	                        	                        	                        	                        	                        	                   			private $interactiveType;
+                        	                        	                        	                        	                        	                   			private $interactiveType;
     	                        
 	public function setInteractiveType($interactiveType){
 		$this->interactiveType = $interactiveType;
@@ -164,6 +164,28 @@ class AdsIbgUniversalJosServiceLocationQueryRequest
 
 	public function getInteractiveType(){
 	  return $this->interactiveType;
+	}
+
+                        	                   			private $isDownload;
+    	                        
+	public function setIsDownload($isDownload){
+		$this->isDownload = $isDownload;
+         $this->apiParas["isDownload"] = $isDownload;
+	}
+
+	public function getIsDownload(){
+	  return $this->isDownload;
+	}
+
+                        	                   			private $reportName;
+    	                        
+	public function setReportName($reportName){
+		$this->reportName = $reportName;
+         $this->apiParas["reportName"] = $reportName;
+	}
+
+	public function getReportName(){
+	  return $this->reportName;
 	}
 
                         	                        	}

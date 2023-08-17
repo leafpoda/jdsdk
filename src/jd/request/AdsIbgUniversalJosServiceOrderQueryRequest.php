@@ -45,17 +45,6 @@ class AdsIbgUniversalJosServiceOrderQueryRequest
 	  return $this->clickStartDay;
 	}
 
-                        	                   			private $orderType;
-    	                        
-	public function setOrderType($orderType){
-		$this->orderType = $orderType;
-         $this->apiParas["orderType"] = $orderType;
-	}
-
-	public function getOrderType(){
-	  return $this->orderType;
-	}
-
                         	                   			private $orderStartDay;
     	                        
 	public function setOrderStartDay($orderStartDay){
@@ -89,17 +78,6 @@ class AdsIbgUniversalJosServiceOrderQueryRequest
 	  return $this->pageSize;
 	}
 
-                        	                   			private $platform;
-    	                        
-	public function setPlatform($platform){
-		$this->platform = $platform;
-         $this->apiParas["platform"] = $platform;
-	}
-
-	public function getPlatform(){
-	  return $this->platform;
-	}
-
                         	                   			private $adGroupId;
     	                        
 	public function setAdGroupId($adGroupId){
@@ -122,28 +100,6 @@ class AdsIbgUniversalJosServiceOrderQueryRequest
 	  return $this->paymentType;
 	}
 
-                        	                   			private $activityId;
-    	                        
-	public function setActivityId($activityId){
-		$this->activityId = $activityId;
-         $this->apiParas["activityId"] = $activityId;
-	}
-
-	public function getActivityId(){
-	  return $this->activityId;
-	}
-
-                        	                   			private $mediaGroupId;
-    	                        
-	public function setMediaGroupId($mediaGroupId){
-		$this->mediaGroupId = $mediaGroupId;
-         $this->apiParas["mediaGroupId"] = $mediaGroupId;
-	}
-
-	public function getMediaGroupId(){
-	  return $this->mediaGroupId;
-	}
-
                         	                   			private $province;
     	                        
 	public function setProvince($province){
@@ -164,17 +120,6 @@ class AdsIbgUniversalJosServiceOrderQueryRequest
 
 	public function getClickOrOrderDay(){
 	  return $this->clickOrOrderDay;
-	}
-
-                        	                   			private $clickOrOrderCaliber;
-    	                        
-	public function setClickOrOrderCaliber($clickOrOrderCaliber){
-		$this->clickOrOrderCaliber = $clickOrOrderCaliber;
-         $this->apiParas["clickOrOrderCaliber"] = $clickOrOrderCaliber;
-	}
-
-	public function getClickOrOrderCaliber(){
-	  return $this->clickOrOrderCaliber;
 	}
 
                         	                   			private $orderEndDay;
@@ -243,7 +188,7 @@ class AdsIbgUniversalJosServiceOrderQueryRequest
 	  return $this->mediaType;
 	}
 
-                        	                        	                   			private $posPackageId;
+                        	                   			private $posPackageId;
     	                        
 	public function setPosPackageId($posPackageId){
 		$this->posPackageId = $posPackageId;
@@ -263,28 +208,6 @@ class AdsIbgUniversalJosServiceOrderQueryRequest
 
 	public function getPage(){
 	  return $this->page;
-	}
-
-                        	                   			private $startDay;
-    	                        
-	public function setStartDay($startDay){
-		$this->startDay = $startDay;
-         $this->apiParas["startDay"] = $startDay;
-	}
-
-	public function getStartDay(){
-	  return $this->startDay;
-	}
-
-                        	                   			private $endDay;
-    	                        
-	public function setEndDay($endDay){
-		$this->endDay = $endDay;
-         $this->apiParas["endDay"] = $endDay;
-	}
-
-	public function getEndDay(){
-	  return $this->endDay;
 	}
 
                         	                   			private $myself;
@@ -353,7 +276,29 @@ class AdsIbgUniversalJosServiceOrderQueryRequest
 	  return $this->jdMediaUserId;
 	}
 
-}
+                        	                   			private $isDownload;
+    	                        
+	public function setIsDownload($isDownload){
+		$this->isDownload = $isDownload;
+         $this->apiParas["isDownload"] = $isDownload;
+	}
+
+	public function getIsDownload(){
+	  return $this->isDownload;
+	}
+
+                        	                   			private $reportName;
+    	                        
+	public function setReportName($reportName){
+		$this->reportName = $reportName;
+         $this->apiParas["reportName"] = $reportName;
+	}
+
+	public function getReportName(){
+	  return $this->reportName;
+	}
+
+                        	                        	}
 
 
 

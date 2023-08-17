@@ -94,7 +94,18 @@ class AdsDspRtbFeaturedBindCrowdRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                        	                   			private $platformBusinessType;
+    	                        
+	public function setPlatformBusinessType($platformBusinessType){
+		$this->platformBusinessType = $platformBusinessType;
+         $this->apiParas["platformBusinessType"] = $platformBusinessType;
+	}
+
+	public function getPlatformBusinessType(){
+	  return $this->platformBusinessType;
+	}
+
+                        	                            }
 
 
 

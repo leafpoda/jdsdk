@@ -1,6 +1,8 @@
 <?php
 class MarketBdpSaleVenderSkuRankQueryRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -8,7 +10,10 @@ class MarketBdpSaleVenderSkuRankQueryRequest
 	}
 	
 	public function getApiParas(){
-		return json_encode($this->apiParas);
+	    if(empty($this->apiParas)){
+            return "{}";
+        }
+        return json_encode($this->apiParas);
 	}
 	
 	public function check(){
@@ -19,6 +24,16 @@ class MarketBdpSaleVenderSkuRankQueryRequest
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
+
+    private $version;
+
+    public function setVersion($version){
+        $this->version = $version;
+    }
+
+    public function getVersion(){
+        return $this->version;
+    }
                                     	                                            		                                    	                   			private $opTime;
     	                        
 	public function setOpTime($opTime){

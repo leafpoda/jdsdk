@@ -10,17 +10,17 @@ class AdsDspRtbTpBatchUpdateDifferentPosCoefRequest
 	}
 	
 	public function getApiParas(){
-	    if(empty($this->apiParas)){
-            return "{}";
-        }
-        return json_encode($this->apiParas);
+        if(empty($this->apiParas)){
+	        return "{}";
+	    }
+		return json_encode($this->apiParas);
 	}
 	
 	public function check(){
 		
 	}
 	
-	public function putOtherTextParam($key, $value){
+    public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
@@ -34,52 +34,22 @@ class AdsDspRtbTpBatchUpdateDifferentPosCoefRequest
     public function getVersion(){
         return $this->version;
     }
-                                                             	                        	                                                                                                                                                                                                                                                                                        private $id;
-                              public function setId($id ){
-                 $this->id=$id;
-                 $this->apiParas["id"] = $id;
-              }
+    private  $posPackageVOS;
 
-              public function getId(){
-              	return $this->id;
-              }
-                                                                                                                                                                                                                                                                                                                       private $coef;
-                              public function setCoef($coef ){
-                 $this->coef=$coef;
-                 $this->apiParas["coef"] = $coef;
-              }
+    public function setPosPackageVOS($posPackageVOS){
+        $this->apiParas['posPackageVOS'] = $posPackageVOS;
+    }
+    public function getPosPackageVOS(){
+        return $this->apiParas['posPackageVOS'];
+    }
+    private  $paramExt;
 
-              public function getCoef(){
-              	return $this->coef;
-              }
-                                                                                                                                                            		                                    	                        	                        	                        	                        	                   			private $accessPin;
-    	                        
-	public function setAccessPin($accessPin){
-		$this->accessPin = $accessPin;
-         $this->apiParas["accessPin"] = $accessPin;
-	}
+    public function setParamExt($paramExt){
+        $this->apiParas['paramExt'] = $paramExt;
+    }
+    public function getParamExt(){
+        return $this->apiParas['paramExt'];
+    }
+}
 
-	public function getAccessPin(){
-	  return $this->accessPin;
-	}
-
-                        	                   			private $authType;
-    	                        
-	public function setAuthType($authType){
-		$this->authType = $authType;
-         $this->apiParas["authType"] = $authType;
-	}
-
-	public function getAuthType(){
-	  return $this->authType;
-	}
-
-                            }
-
-
-
-
-
-        
- 
-
+?>

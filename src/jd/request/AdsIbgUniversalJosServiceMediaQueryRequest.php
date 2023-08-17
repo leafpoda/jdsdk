@@ -133,18 +133,7 @@ class AdsIbgUniversalJosServiceMediaQueryRequest
 	  return $this->accessPin;
 	}
 
-                        	                        	                        	                        	                        	                   			private $impressionOrClickEffect;
-    	                        
-	public function setImpressionOrClickEffect($impressionOrClickEffect){
-		$this->impressionOrClickEffect = $impressionOrClickEffect;
-         $this->apiParas["impressionOrClickEffect"] = $impressionOrClickEffect;
-	}
-
-	public function getImpressionOrClickEffect(){
-	  return $this->impressionOrClickEffect;
-	}
-
-                        	                   			private $queryType;
+                        	                        	                        	                        	                        	                   			private $queryType;
     	                        
 	public function setQueryType($queryType){
 		$this->queryType = $queryType;
@@ -155,7 +144,29 @@ class AdsIbgUniversalJosServiceMediaQueryRequest
 	  return $this->queryType;
 	}
 
-                        	                        	                        	}
+                        	                        	                   			private $isDownload;
+    	                        
+	public function setIsDownload($isDownload){
+		$this->isDownload = $isDownload;
+         $this->apiParas["isDownload"] = $isDownload;
+	}
+
+	public function getIsDownload(){
+	  return $this->isDownload;
+	}
+
+                        	                   			private $reportName;
+    	                        
+	public function setReportName($reportName){
+		$this->reportName = $reportName;
+         $this->apiParas["reportName"] = $reportName;
+	}
+
+	public function getReportName(){
+	  return $this->reportName;
+	}
+
+                        	                        	}
 
 
 

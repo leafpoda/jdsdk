@@ -122,18 +122,7 @@ class AdsIbgUniversalJosServiceCampaignQueryRequest
 	  return $this->mediaType;
 	}
 
-                        	                   			private $filters;
-    	                        
-	public function setFilters($filters){
-		$this->filters = $filters;
-         $this->apiParas["filters"] = $filters;
-	}
-
-	public function getFilters(){
-	  return $this->filters;
-	}
-
-                        	                        	                   			private $platform;
+                        	                   			private $platform;
     	                        
 	public function setPlatform($platform){
 		$this->platform = $platform;
@@ -210,17 +199,6 @@ class AdsIbgUniversalJosServiceCampaignQueryRequest
 	  return $this->campaignName;
 	}
 
-                        	                   			private $campaignIds;
-    	                        
-	public function setCampaignIds($campaignIds){
-		$this->campaignIds = $campaignIds;
-         $this->apiParas["campaignIds"] = $campaignIds;
-	}
-
-	public function getCampaignIds(){
-	  return $this->campaignIds;
-	}
-
                         	                   			private $businessType;
     	                        
 	public function setBusinessType($businessType){
@@ -285,6 +263,39 @@ class AdsIbgUniversalJosServiceCampaignQueryRequest
 
 	public function getGranularity(){
 	  return $this->granularity;
+	}
+
+                        	                   			private $isDownload;
+    	                        
+	public function setIsDownload($isDownload){
+		$this->isDownload = $isDownload;
+         $this->apiParas["isDownload"] = $isDownload;
+	}
+
+	public function getIsDownload(){
+	  return $this->isDownload;
+	}
+
+                        	                   			private $reportName;
+    	                        
+	public function setReportName($reportName){
+		$this->reportName = $reportName;
+         $this->apiParas["reportName"] = $reportName;
+	}
+
+	public function getReportName(){
+	  return $this->reportName;
+	}
+
+                        	                   			private $columns;
+    	                        
+	public function setColumns($columns){
+		$this->columns = $columns;
+         $this->apiParas["columns"] = $columns;
+	}
+
+	public function getColumns(){
+	  return $this->columns;
 	}
 
                         	                        	}

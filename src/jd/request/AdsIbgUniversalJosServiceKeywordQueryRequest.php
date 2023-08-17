@@ -210,6 +210,39 @@ class AdsIbgUniversalJosServiceKeywordQueryRequest
 	  return $this->pageSize;
 	}
 
+                        	                   			private $isDownload;
+    	                        
+	public function setIsDownload($isDownload){
+		$this->isDownload = $isDownload;
+         $this->apiParas["isDownload"] = $isDownload;
+	}
+
+	public function getIsDownload(){
+	  return $this->isDownload;
+	}
+
+                        	                   			private $reportName;
+    	                        
+	public function setReportName($reportName){
+		$this->reportName = $reportName;
+         $this->apiParas["reportName"] = $reportName;
+	}
+
+	public function getReportName(){
+	  return $this->reportName;
+	}
+
+                        	                   			private $containSmart;
+    	                        
+	public function setContainSmart($containSmart){
+		$this->containSmart = $containSmart;
+         $this->apiParas["containSmart"] = $containSmart;
+	}
+
+	public function getContainSmart(){
+	  return $this->containSmart;
+	}
+
                         	                        	}
 
 

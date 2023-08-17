@@ -144,17 +144,6 @@ class AdsIbgUniversalJosServiceSkuQueryRequest
 	  return $this->pageSize;
 	}
 
-                        	                   			private $filters;
-    	                        
-	public function setFilters($filters){
-		$this->filters = $filters;
-         $this->apiParas["filters"] = $filters;
-	}
-
-	public function getFilters(){
-	  return $this->filters;
-	}
-
                         	                   			private $platform;
     	                        
 	public function setPlatform($platform){
@@ -199,7 +188,29 @@ class AdsIbgUniversalJosServiceSkuQueryRequest
 	  return $this->accessPin;
 	}
 
-                        	                        	                        	                        	                        	                        	}
+                        	                        	                        	                        	                        	                   			private $isDownload;
+    	                        
+	public function setIsDownload($isDownload){
+		$this->isDownload = $isDownload;
+         $this->apiParas["isDownload"] = $isDownload;
+	}
+
+	public function getIsDownload(){
+	  return $this->isDownload;
+	}
+
+                        	                   			private $reportName;
+    	                        
+	public function setReportName($reportName){
+		$this->reportName = $reportName;
+         $this->apiParas["reportName"] = $reportName;
+	}
+
+	public function getReportName(){
+	  return $this->reportName;
+	}
+
+                        	                        	}
 
 
 

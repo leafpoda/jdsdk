@@ -166,7 +166,7 @@ class AdsIbgUniversalJosServiceAdQueryRequest
 	  return $this->mediaType;
 	}
 
-                        	                        	                   			private $adGroupId;
+                        	                   			private $adGroupId;
     	                        
 	public function setAdGroupId($adGroupId){
 		$this->adGroupId = $adGroupId;
@@ -265,28 +265,6 @@ class AdsIbgUniversalJosServiceAdQueryRequest
 	  return $this->clickOrOrderCaliber;
 	}
 
-                        	                   			private $filters;
-    	                        
-	public function setFilters($filters){
-		$this->filters = $filters;
-         $this->apiParas["filters"] = $filters;
-	}
-
-	public function getFilters(){
-	  return $this->filters;
-	}
-
-                        	                   			private $ids;
-    	                        
-	public function setIds($ids){
-		$this->ids = $ids;
-         $this->apiParas["ids"] = $ids;
-	}
-
-	public function getIds(){
-	  return $this->ids;
-	}
-
                         	                   			private $interactiveType;
     	                        
 	public function setInteractiveType($interactiveType){
@@ -331,29 +309,7 @@ class AdsIbgUniversalJosServiceAdQueryRequest
 	  return $this->accessPin;
 	}
 
-                        	                        	                        	                        	                        	                   			private $adGroupIds;
-    	                        
-	public function setAdGroupIds($adGroupIds){
-		$this->adGroupIds = $adGroupIds;
-         $this->apiParas["adGroupIds"] = $adGroupIds;
-	}
-
-	public function getAdGroupIds(){
-	  return $this->adGroupIds;
-	}
-
-                        	                   			private $campaignIds;
-    	                        
-	public function setCampaignIds($campaignIds){
-		$this->campaignIds = $campaignIds;
-         $this->apiParas["campaignIds"] = $campaignIds;
-	}
-
-	public function getCampaignIds(){
-	  return $this->campaignIds;
-	}
-
-                        	                   			private $deliverySystemType;
+                        	                        	                        	                        	                        	                   			private $deliverySystemType;
     	                        
 	public function setDeliverySystemType($deliverySystemType){
 		$this->deliverySystemType = $deliverySystemType;
@@ -384,6 +340,61 @@ class AdsIbgUniversalJosServiceAdQueryRequest
 
 	public function getGranularity(){
 	  return $this->granularity;
+	}
+
+                        	                   			private $isDownload;
+    	                        
+	public function setIsDownload($isDownload){
+		$this->isDownload = $isDownload;
+         $this->apiParas["isDownload"] = $isDownload;
+	}
+
+	public function getIsDownload(){
+	  return $this->isDownload;
+	}
+
+                        	                   			private $reportName;
+    	                        
+	public function setReportName($reportName){
+		$this->reportName = $reportName;
+         $this->apiParas["reportName"] = $reportName;
+	}
+
+	public function getReportName(){
+	  return $this->reportName;
+	}
+
+                        	                   			private $creativeType;
+    	                        
+	public function setCreativeType($creativeType){
+		$this->creativeType = $creativeType;
+         $this->apiParas["creativeType"] = $creativeType;
+	}
+
+	public function getCreativeType(){
+	  return $this->creativeType;
+	}
+
+                        	                   			private $type;
+    	                        
+	public function setType($type){
+		$this->type = $type;
+         $this->apiParas["type"] = $type;
+	}
+
+	public function getType(){
+	  return $this->type;
+	}
+
+                        	                   			private $columns;
+    	                        
+	public function setColumns($columns){
+		$this->columns = $columns;
+         $this->apiParas["columns"] = $columns;
+	}
+
+	public function getColumns(){
+	  return $this->columns;
 	}
 
                         	                        	}

@@ -34,7 +34,7 @@ class AdsDspRtbTpBatchUpdatePosPackageCoefRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                                             	                        	                                                                                                                                                                                                                                                                                        private $id;
+                                                        		                                                             	                        	                                                                                                                                                                                                                                                                                                               private $id;
                               public function setId($id ){
                  $this->id=$id;
                  $this->apiParas["id"] = $id;
@@ -87,7 +87,18 @@ class AdsDspRtbTpBatchUpdatePosPackageCoefRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                   			private $platformBusinessType;
+    	                        
+	public function setPlatformBusinessType($platformBusinessType){
+		$this->platformBusinessType = $platformBusinessType;
+         $this->apiParas["platformBusinessType"] = $platformBusinessType;
+	}
+
+	public function getPlatformBusinessType(){
+	  return $this->platformBusinessType;
+	}
+
+                        	                        	                            }
 
 
 

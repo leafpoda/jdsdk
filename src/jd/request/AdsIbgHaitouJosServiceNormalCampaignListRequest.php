@@ -10,17 +10,17 @@ class AdsIbgHaitouJosServiceNormalCampaignListRequest
 	}
 	
 	public function getApiParas(){
-	    if(empty($this->apiParas)){
-            return "{}";
-        }
-        return json_encode($this->apiParas);
+        if(empty($this->apiParas)){
+	        return "{}";
+	    }
+		return json_encode($this->apiParas);
 	}
 	
 	public function check(){
 		
 	}
 	
-	public function putOtherTextParam($key, $value){
+    public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
@@ -34,45 +34,14 @@ class AdsIbgHaitouJosServiceNormalCampaignListRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                        	                        	                        	                   			private $accessPin;
-    	                        
-	public function setAccessPin($accessPin){
-		$this->accessPin = $accessPin;
-         $this->apiParas["accessPin"] = $accessPin;
-	}
+    private  $openApiSysDto;
 
-	public function getAccessPin(){
-	  return $this->accessPin;
-	}
+    public function setOpenApiSysDto($openApiSysDto){
+        $this->apiParas['openApiSysDto'] = $openApiSysDto;
+    }
+    public function getOpenApiSysDto(){
+        return $this->apiParas['openApiSysDto'];
+    }
+}
 
-                        	                   			private $authType;
-    	                        
-	public function setAuthType($authType){
-		$this->authType = $authType;
-         $this->apiParas["authType"] = $authType;
-	}
-
-	public function getAuthType(){
-	  return $this->authType;
-	}
-
-                        	                        	                        	                   			private $siteId;
-    	                        
-	public function setSiteId($siteId){
-		$this->siteId = $siteId;
-         $this->apiParas["siteId"] = $siteId;
-	}
-
-	public function getSiteId(){
-	  return $this->siteId;
-	}
-
-                            }
-
-
-
-
-
-        
- 
-
+?>
