@@ -144,7 +144,7 @@ class DmpNewTagListV1Request
 	  return $this->tagCategoryType;
 	}
 
-}
+                        	}
 
 
 

@@ -10,17 +10,17 @@ class AdwordsReadFindAdWordsByWareIdRequest
 	}
 	
 	public function getApiParas(){
-	    if(empty($this->apiParas)){
-            return "{}";
-        }
-        return json_encode($this->apiParas);
+        if(empty($this->apiParas)){
+	        return "{}";
+	    }
+		return json_encode($this->apiParas);
 	}
 	
 	public function check(){
 		
 	}
 	
-	public function putOtherTextParam($key, $value){
+    public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
@@ -34,23 +34,22 @@ class AdwordsReadFindAdWordsByWareIdRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                        	                        	                                                    	                        	                   			private $wareId;
-    	                        
-	public function setWareId($wareId){
-		$this->wareId = $wareId;
-         $this->apiParas["wareId"] = $wareId;
-	}
+    private  $client_info;
 
-	public function getWareId(){
-	  return $this->wareId;
-	}
+    public function setClient_info($client_info){
+        $this->apiParas['client_info'] = $client_info;
+    }
+    public function getClient_info(){
+        return $this->apiParas['client_info'];
+    }
+    private  $wareId;
 
+    public function setWareId($wareId){
+        $this->apiParas['wareId'] = $wareId;
+    }
+    public function getWareId(){
+        return $this->apiParas['wareId'];
+    }
 }
 
-
-
-
-
-        
- 
-
+?>

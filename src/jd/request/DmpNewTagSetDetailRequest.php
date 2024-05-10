@@ -309,7 +309,7 @@ class DmpNewTagSetDetailRequest
 	  return $this->attributeList;
 	}
 
-}
+                        	                        	                        	                        	}
 
 
 

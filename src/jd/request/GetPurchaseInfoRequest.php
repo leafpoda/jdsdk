@@ -10,17 +10,17 @@ class GetPurchaseInfoRequest
 	}
 	
 	public function getApiParas(){
-        if(empty($this->apiParas)){
-	        return "{}";
-	    }
-		return json_encode($this->apiParas);
+	    if(empty($this->apiParas)){
+            return "{}";
+        }
+        return json_encode($this->apiParas);
 	}
 	
 	public function check(){
 		
 	}
 	
-    public function putOtherTextParam($key, $value){
+	public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
@@ -34,14 +34,12 @@ class GetPurchaseInfoRequest
     public function getVersion(){
         return $this->version;
     }
-    private  $requestParam;
+                                                        		                                    	                        	                            }
 
-    public function setRequestParam($requestParam){
-        $this->apiParas['requestParam'] = $requestParam;
-    }
-    public function getRequestParam(){
-        return $this->apiParas['requestParam'];
-    }
-}
 
-?>
+
+
+
+        
+ 
+

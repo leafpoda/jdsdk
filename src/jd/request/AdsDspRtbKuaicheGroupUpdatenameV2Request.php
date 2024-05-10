@@ -10,17 +10,17 @@ class AdsDspRtbKuaicheGroupUpdatenameV2Request
 	}
 	
 	public function getApiParas(){
-	    if(empty($this->apiParas)){
-            return "{}";
-        }
-        return json_encode($this->apiParas);
+        if(empty($this->apiParas)){
+	        return "{}";
+	    }
+		return json_encode($this->apiParas);
 	}
 	
 	public function check(){
 		
 	}
 	
-	public function putOtherTextParam($key, $value){
+    public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
@@ -34,67 +34,22 @@ class AdsDspRtbKuaicheGroupUpdatenameV2Request
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                   			private $id;
-    	                        
-	public function setId($id){
-		$this->id = $id;
-         $this->apiParas["id"] = $id;
-	}
+    private  $data;
 
-	public function getId(){
-	  return $this->id;
-	}
+    public function setData($data){
+        $this->apiParas['data'] = $data;
+    }
+    public function getData(){
+        return $this->apiParas['data'];
+    }
+    private  $system;
 
-                        	                   			private $name;
-    	                        
-	public function setName($name){
-		$this->name = $name;
-         $this->apiParas["name"] = $name;
-	}
+    public function setSystem($system){
+        $this->apiParas['system'] = $system;
+    }
+    public function getSystem(){
+        return $this->apiParas['system'];
+    }
+}
 
-	public function getName(){
-	  return $this->name;
-	}
-
-                                                                        		                                    	                        	                        	                   			private $authType;
-    	                        
-	public function setAuthType($authType){
-		$this->authType = $authType;
-         $this->apiParas["authType"] = $authType;
-	}
-
-	public function getAuthType(){
-	  return $this->authType;
-	}
-
-                        	                        	                        	                   			private $accessPin;
-    	                        
-	public function setAccessPin($accessPin){
-		$this->accessPin = $accessPin;
-         $this->apiParas["accessPin"] = $accessPin;
-	}
-
-	public function getAccessPin(){
-	  return $this->accessPin;
-	}
-
-                        	                        	                        	                   			private $platformBusinessType;
-    	                        
-	public function setPlatformBusinessType($platformBusinessType){
-		$this->platformBusinessType = $platformBusinessType;
-         $this->apiParas["platformBusinessType"] = $platformBusinessType;
-	}
-
-	public function getPlatformBusinessType(){
-	  return $this->platformBusinessType;
-	}
-
-                            }
-
-
-
-
-
-        
- 
-
+?>

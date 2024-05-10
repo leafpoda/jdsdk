@@ -89,7 +89,7 @@ class AdsDspRtbKuaicheQueryPriceSuggestRequest
 	  return $this->authType;
 	}
 
-                            }
+                        	                            }
 
 
 

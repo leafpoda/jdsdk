@@ -1,6 +1,8 @@
 <?php
 class PopPopCommentJsfServiceGetVenderCommentsForJosRequest
 {
+
+
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
@@ -23,7 +25,7 @@ class PopPopCommentJsfServiceGetVenderCommentsForJosRequest
 		$this->$key = $value;
 	}
 
-    private  $version;
+    private $version;
 
     public function setVersion($version){
         $this->version = $version;
@@ -173,6 +175,17 @@ class PopPopCommentJsfServiceGetVenderCommentsForJosRequest
 
 	public function getOpenIdBuyer(){
 	  return $this->openIdBuyer;
+	}
+
+                        	                   			private $xidBuyer;
+    	                                                            
+	public function setXidBuyer($xidBuyer){
+		$this->xidBuyer = $xidBuyer;
+         $this->apiParas["xid_buyer"] = $xidBuyer;
+	}
+
+	public function getXidBuyer(){
+	  return $this->xidBuyer;
 	}
 
                             }

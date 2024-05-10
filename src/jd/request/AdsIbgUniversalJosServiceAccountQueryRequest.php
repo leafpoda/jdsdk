@@ -276,6 +276,17 @@ class AdsIbgUniversalJosServiceAccountQueryRequest
 	  return $this->columns;
 	}
 
+                        	                   			private $scenarioType;
+    	                        
+	public function setScenarioType($scenarioType){
+		$this->scenarioType = $scenarioType;
+         $this->apiParas["scenarioType"] = $scenarioType;
+	}
+
+	public function getScenarioType(){
+	  return $this->scenarioType;
+	}
+
                         	                        	}
 
 

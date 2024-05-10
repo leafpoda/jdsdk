@@ -78,7 +78,7 @@ class DmpNewTagInfoSkusRequest
 	  return $this->type;
 	}
 
-}
+                        	}
 
 
 

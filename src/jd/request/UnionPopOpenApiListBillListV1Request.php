@@ -45,18 +45,7 @@ class UnionPopOpenApiListBillListV1Request
 	  return $this->josRemoteIp;
 	}
 
-                        	                   			private $josApiName;
-    	                        
-	public function setJosApiName($josApiName){
-		$this->josApiName = $josApiName;
-         $this->apiParas["josApiName"] = $josApiName;
-	}
-
-	public function getJosApiName(){
-	  return $this->josApiName;
-	}
-
-                        	                   			private $accessPin;
+                        	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;

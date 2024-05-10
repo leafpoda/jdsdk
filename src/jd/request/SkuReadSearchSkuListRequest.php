@@ -218,6 +218,33 @@ class SkuReadSearchSkuListRequest
               public function getValid(){
               	return $this->valid;
               }
+                                                                                                                                                                 	                        	                                                                                                                                                                                                                                                                                        private $key;
+                              public function setKey($key ){
+                 $this->key=$key;
+                 $this->apiParas["key"] = $key;
+              }
+
+              public function getKey(){
+              	return $this->key;
+              }
+                                                                                                                                                                                                                                                                                                                       private $value;
+                              public function setValue($value ){
+                 $this->value=$value;
+                 $this->apiParas["value"] = $value;
+              }
+
+              public function getValue(){
+              	return $this->value;
+              }
+                                                                                                                                                                                                                                                                                                                       private $cn;
+                              public function setCn($cn ){
+                 $this->cn=$cn;
+                 $this->apiParas["cn"] = $cn;
+              }
+
+              public function getCn(){
+              	return $this->cn;
+              }
                                                                                                                                                                     	                   	                    		private $field;
     	                        
 	public function setField($field){

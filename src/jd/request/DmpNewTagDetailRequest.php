@@ -100,6 +100,17 @@ class DmpNewTagDetailRequest
 	  return $this->coverageRate;
 	}
 
+                        	                   			private $boardId;
+    	                        
+	public function setBoardId($boardId){
+		$this->boardId = $boardId;
+         $this->apiParas["boardId"] = $boardId;
+	}
+
+	public function getBoardId(){
+	  return $this->boardId;
+	}
+
 }
 
 

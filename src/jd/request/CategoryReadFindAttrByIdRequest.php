@@ -10,17 +10,17 @@ class CategoryReadFindAttrByIdRequest
 	}
 	
 	public function getApiParas(){
-	    if(empty($this->apiParas)){
-            return "{}";
-        }
-        return json_encode($this->apiParas);
+        if(empty($this->apiParas)){
+	        return "{}";
+	    }
+		return json_encode($this->apiParas);
 	}
 	
 	public function check(){
 		
 	}
 	
-	public function putOtherTextParam($key, $value){
+    public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
 	}
@@ -34,34 +34,30 @@ class CategoryReadFindAttrByIdRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                        	                        	                                                    	                        	                   			private $attrId;
-    	                        
-	public function setAttrId($attrId){
-		$this->attrId = $attrId;
-         $this->apiParas["attrId"] = $attrId;
-	}
+    private  $clientInfo;
 
-	public function getAttrId(){
-	  return $this->attrId;
-	}
+    public function setClientInfo($clientInfo){
+        $this->apiParas['clientInfo'] = $clientInfo;
+    }
+    public function getClientInfo(){
+        return $this->apiParas['clientInfo'];
+    }
+    private  $attrId;
 
-                        	                   	                    		private $field;
-    	                        
-	public function setField($field){
-		$this->field = $field;
-         $this->apiParas["field"] = $field;
-	}
+    public function setAttrId($attrId){
+        $this->apiParas['attrId'] = $attrId;
+    }
+    public function getAttrId(){
+        return $this->apiParas['attrId'];
+    }
+    private  $field;
 
-	public function getField(){
-	  return $this->field;
-	}
-
+    public function setField($field){
+        $this->apiParas['field'] = $field;
+    }
+    public function getField(){
+        return $this->apiParas['field'];
+    }
 }
 
-
-
-
-
-        
- 
-
+?>

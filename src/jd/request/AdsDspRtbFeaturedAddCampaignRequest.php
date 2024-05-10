@@ -89,18 +89,29 @@ class AdsDspRtbFeaturedAddCampaignRequest
 	  return $this->name;
 	}
 
-                        	                   			private $uniformSpeed;
+                                                                        		                                    	                   			private $pin;
     	                        
-	public function setUniformSpeed($uniformSpeed){
-		$this->uniformSpeed = $uniformSpeed;
-         $this->apiParas["uniformSpeed"] = $uniformSpeed;
+	public function setPin($pin){
+		$this->pin = $pin;
+         $this->apiParas["pin"] = $pin;
 	}
 
-	public function getUniformSpeed(){
-	  return $this->uniformSpeed;
+	public function getPin(){
+	  return $this->pin;
 	}
 
-                                                                        		                                    	                        	                        	                        	                        	                   			private $accessPin;
+                        	                        	                   			private $venderId;
+    	                        
+	public function setVenderId($venderId){
+		$this->venderId = $venderId;
+         $this->apiParas["venderId"] = $venderId;
+	}
+
+	public function getVenderId(){
+	  return $this->venderId;
+	}
+
+                        	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;
@@ -122,7 +133,18 @@ class AdsDspRtbFeaturedAddCampaignRequest
 	  return $this->authType;
 	}
 
-                        	                        	                        	                   			private $platformBusinessType;
+                        	                        	                   			private $josRemoteIp;
+    	                        
+	public function setJosRemoteIp($josRemoteIp){
+		$this->josRemoteIp = $josRemoteIp;
+         $this->apiParas["josRemoteIp"] = $josRemoteIp;
+	}
+
+	public function getJosRemoteIp(){
+	  return $this->josRemoteIp;
+	}
+
+                        	                   			private $platformBusinessType;
     	                        
 	public function setPlatformBusinessType($platformBusinessType){
 		$this->platformBusinessType = $platformBusinessType;

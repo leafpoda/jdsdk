@@ -56,7 +56,7 @@ class DmpNewDimenCategoryListRequest
 	  return $this->authType;
 	}
 
-                        	                        	                        	                        	                        	}
+                        	                        	                        	                        	                        	                        	                        	}
 
 
 

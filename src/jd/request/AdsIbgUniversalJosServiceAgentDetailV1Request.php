@@ -144,6 +144,17 @@ class AdsIbgUniversalJosServiceAgentDetailV1Request
 	  return $this->reportName;
 	}
 
+                        	                   			private $filters;
+    	                        
+	public function setFilters($filters){
+		$this->filters = $filters;
+         $this->apiParas["filters"] = $filters;
+	}
+
+	public function getFilters(){
+	  return $this->filters;
+	}
+
                         	                        	}
 
 

@@ -67,18 +67,7 @@ class AdsIbgMiaoshaCampaignGetBudgetRequest
 	  return $this->authType;
 	}
 
-                        	                   			private $requestFrom;
-    	                        
-	public function setRequestFrom($requestFrom){
-		$this->requestFrom = $requestFrom;
-         $this->apiParas["requestFrom"] = $requestFrom;
-	}
-
-	public function getRequestFrom(){
-	  return $this->requestFrom;
-	}
-
-                        	                            }
+                        	                        	                        	                        	                        	                            }
 
 
 
