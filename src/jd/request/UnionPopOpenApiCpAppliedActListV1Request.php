@@ -1,12 +1,12 @@
 <?php
-class JointQueryActivitySkuListRequest
+class UnionPopOpenApiCpAppliedActListV1Request
 {
 
 
 	private $apiParas = array();
 	
 	public function getApiMethodName(){
-	  return "jingdong.joint.queryActivitySkuList";
+	  return "jingdong.union.pop.open.api.cp.appliedActList.v1";
 	}
 	
 	public function getApiParas(){
@@ -34,18 +34,18 @@ class JointQueryActivitySkuListRequest
     public function getVersion(){
         return $this->version;
     }
-                                                        		                                    	                   			private $jointActivityId;
+                                    	                        	                   			private $josRemoteIp;
     	                        
-	public function setJointActivityId($jointActivityId){
-		$this->jointActivityId = $jointActivityId;
-         $this->apiParas["jointActivityId"] = $jointActivityId;
+	public function setJosRemoteIp($josRemoteIp){
+		$this->josRemoteIp = $josRemoteIp;
+         $this->apiParas["josRemoteIp"] = $josRemoteIp;
 	}
 
-	public function getJointActivityId(){
-	  return $this->jointActivityId;
+	public function getJosRemoteIp(){
+	  return $this->josRemoteIp;
 	}
 
-                                                    	                                            		                                    	                   			private $accessPin;
+                        	                        	                   			private $accessPin;
     	                        
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;
@@ -67,7 +67,18 @@ class JointQueryActivitySkuListRequest
 	  return $this->authType;
 	}
 
-                        	                        	                        	                        	                        	                            }
+                        	                        	                        	                   			private $queryJsonString;
+    	                        
+	public function setQueryJsonString($queryJsonString){
+		$this->queryJsonString = $queryJsonString;
+         $this->apiParas["queryJsonString"] = $queryJsonString;
+	}
+
+	public function getQueryJsonString(){
+	  return $this->queryJsonString;
+	}
+
+                        	                        	}
 
 
 

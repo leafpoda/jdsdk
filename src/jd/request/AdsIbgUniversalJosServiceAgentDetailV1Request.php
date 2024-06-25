@@ -155,6 +155,28 @@ class AdsIbgUniversalJosServiceAgentDetailV1Request
 	  return $this->filters;
 	}
 
+                        	                   			private $dimensions;
+    	                        
+	public function setDimensions($dimensions){
+		$this->dimensions = $dimensions;
+         $this->apiParas["dimensions"] = $dimensions;
+	}
+
+	public function getDimensions(){
+	  return $this->dimensions;
+	}
+
+                        	                   			private $obys;
+    	                        
+	public function setObys($obys){
+		$this->obys = $obys;
+         $this->apiParas["obys"] = $obys;
+	}
+
+	public function getObys(){
+	  return $this->obys;
+	}
+
                         	                        	}
 
 
