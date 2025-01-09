@@ -4,22 +4,22 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 
 
 	private $apiParas = array();
-	
+
 	public function getApiMethodName(){
 	  return "jingdong.ads.ibg.UniversalJosService.index.trend";
 	}
-	
+
 	public function getApiParas(){
 	    if(empty($this->apiParas)){
             return "{}";
         }
-        return $this->apiParas;
+        return json_encode($this->apiParas);
 	}
-	
+
 	public function check(){
-		
+
 	}
-	
+
 	public function putOtherTextParam($key, $value){
 		$this->apiParas[$key] = $value;
 		$this->$key = $value;
@@ -35,7 +35,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
         return $this->version;
     }
                                     	                        	                        	                   			private $authType;
-    	                        
+
 	public function setAuthType($authType){
 		$this->authType = $authType;
          $this->apiParas["authType"] = $authType;
@@ -46,7 +46,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $accessPin;
-    	                        
+
 	public function setAccessPin($accessPin){
 		$this->accessPin = $accessPin;
          $this->apiParas["accessPin"] = $accessPin;
@@ -57,7 +57,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                        	                        	                        	                        	                   			private $startDay;
-    	                        
+
 	public function setStartDay($startDay){
 		$this->startDay = $startDay;
          $this->apiParas["startDay"] = $startDay;
@@ -68,7 +68,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $endDay;
-    	                        
+
 	public function setEndDay($endDay){
 		$this->endDay = $endDay;
          $this->apiParas["endDay"] = $endDay;
@@ -79,7 +79,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $clickOrOrderDay;
-    	                        
+
 	public function setClickOrOrderDay($clickOrOrderDay){
 		$this->clickOrOrderDay = $clickOrOrderDay;
          $this->apiParas["clickOrOrderDay"] = $clickOrOrderDay;
@@ -90,7 +90,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $clickOrOrderCaliber;
-    	                        
+
 	public function setClickOrOrderCaliber($clickOrOrderCaliber){
 		$this->clickOrOrderCaliber = $clickOrOrderCaliber;
          $this->apiParas["clickOrOrderCaliber"] = $clickOrOrderCaliber;
@@ -101,7 +101,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $orderStatusCategory;
-    	                        
+
 	public function setOrderStatusCategory($orderStatusCategory){
 		$this->orderStatusCategory = $orderStatusCategory;
          $this->apiParas["orderStatusCategory"] = $orderStatusCategory;
@@ -112,7 +112,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $giftFlag;
-    	                        
+
 	public function setGiftFlag($giftFlag){
 		$this->giftFlag = $giftFlag;
          $this->apiParas["giftFlag"] = $giftFlag;
@@ -123,7 +123,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $skuBrandId;
-    	                        
+
 	public function setSkuBrandId($skuBrandId){
 		$this->skuBrandId = $skuBrandId;
          $this->apiParas["skuBrandId"] = $skuBrandId;
@@ -134,7 +134,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $skuCid3;
-    	                        
+
 	public function setSkuCid3($skuCid3){
 		$this->skuCid3 = $skuCid3;
          $this->apiParas["skuCid3"] = $skuCid3;
@@ -145,7 +145,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $deliveryType;
-    	                        
+
 	public function setDeliveryType($deliveryType){
 		$this->deliveryType = $deliveryType;
          $this->apiParas["deliveryType"] = $deliveryType;
@@ -156,7 +156,7 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 	}
 
                         	                   			private $businessTypes;
-    	                        
+
 	public function setBusinessTypes($businessTypes){
 		$this->businessTypes = $businessTypes;
          $this->apiParas["businessTypes"] = $businessTypes;
@@ -172,6 +172,6 @@ class AdsIbgUniversalJosServiceIndexTrendRequest
 
 
 
-        
- 
+
+
 
