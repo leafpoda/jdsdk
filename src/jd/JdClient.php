@@ -115,10 +115,17 @@ class JdClient
 
 		//获取业务参数
 		$apiParams = $request->getApiParas();
-		if (count(json_decode($apiParams,true)) == 0) {
-			$apiParams = '{}';
-		}
-		
+        if(is_array($apiParams)){
+            if(count($apiParams) == 0){
+                $apiParams = '{}';
+            }else{
+                $apiParams = json_encode($apiParams);
+            }
+        }else {
+            if (count(json_decode($apiParams, true)) == 0) {
+                $apiParams = '{}';
+            }
+        }
 		$sysParams[$this->json_param_key] = $apiParams;
 
 		//签名
